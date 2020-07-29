@@ -1,0 +1,29 @@
+:root{
+    --navigation-colour: #2f6d16;
+    --font-color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color);
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+  background-color: var(--navigation-colour);
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+#navlist {
+    width: 500px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#navlist li {
+    list-style: none;
+}
