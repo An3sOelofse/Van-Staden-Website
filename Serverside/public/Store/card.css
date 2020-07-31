@@ -12,8 +12,6 @@
 
 .card {
 
-margin-left: 100px;
-
     width: 400px;
     height: 200px;
     border-radius: 15px;
@@ -29,8 +27,7 @@ margin-left: 100px;
     width: 410px;
     height: 210px;
     margin-top: -5px;
-   /* margin-left: -5px;*/
-    margin-left: 95px;
+    margin-left: -5px;
     background-color: var(--card-color-hover);
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
 }
