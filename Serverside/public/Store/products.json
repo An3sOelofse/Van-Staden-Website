@@ -1,0 +1,912 @@
+[
+{
+    "name":"Padded Parka Jacket",
+    "colours":["3D","Shadows","Indigo","Khaki","Military Olive","Putty"],
+    "productNumber":["TDPJ","SPJ","IPJ","KPJ","PTPJ","OPJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Padded Urban Bush Jacket",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDPUJ","SPJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Storm Jacket",
+    "colours":["3D"],
+    "productNumber":["TDMSJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"PH Jacket",
+    "colours":["3D","Khaki","Military Olive"],
+    "productNumber":["TDPHJ","KPHJ","MPHJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Rain Jacket",
+    "colours":["3D"],
+    "productNumber":["TDRJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Soft Shell Hoody",
+    "colours":["3D"],
+    "productNumber":["OSRH"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Micro-Lite Jacket",
+    "colours":["3D","Olive","Black"],
+    "productNumber":["TDMJ","OMLJ","BLMJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Micro-Lite Bodywarmer",
+    "colours":["3D","Olive"],
+    "productNumber":["TDMBW","OMBW"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Reactor Hoody",
+    "colours":["3D/Olive","Olive"],
+    "productNumber":["TDLFH","OFH"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Poncho (free size)",
+    "colours":["3D"],
+    "productNumber":["TDP"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Reactor Zipper",
+    "colours":["3D"],
+    "productNumber":["TDLFZ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Short Sleeve Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDSS","SSSS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Long Sleeve Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDLS","SLS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Colour Block S/S Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDCBSS","SLS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Adventure Shirt 2019",
+    "colours":["3D"],
+    "productNumber":["TDAS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"PH Shirt",
+    "colours":["Khaki","Military Olive"],
+    "productNumber":["KPHSS","MPHSS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Adventure Shirt",
+    "colours":["Military Olive","Khaki"],
+    "productNumber":["MASS","KASS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Adventure Colour Block Shirt",
+    "colours":["Military Olive","Khaki"],
+    "productNumber":["MCBA","KCBA"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Short Sleeve T-Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDST19","SSST19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Long Sleeve T-Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDLST19","SLST19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Mesh Golf T-Shirt",
+    "colours":["3D"],
+    "productNumber":["TDMG"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Mesh S/S T-Shirt",
+    "colours":["3D"],
+    "productNumber":["TDMST"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Buffalo",
+    "colours":["Olive","Denim","Khaki"],
+    "productNumber":["BSAOT19","BSADT19","BSAKT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Old School",
+    "colours":["Sky Blue","Denim","Khaki","Olive"],
+    "productNumber":["OSSBAT19","OSDSAT19","OSKSAT19","OSASAT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Don't Blink",
+    "colours":["Denim","Black","Olive","Putty"],
+    "productNumber":["DBDBSAT19","DBBSAT19","DBOSAT19","DBPSAT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Good Day",
+    "colours":["Khaki","Black","Olive"],
+    "productNumber":["GDKSAT19","GDBSAT19","GDOKSAT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Est. 1999",
+    "colours":["Black","Putty","Olive"],
+    "productNumber":["EBSAT19","EPSAT19","EOSAT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Rifle",
+    "colours":["Khaki","Black","Denim","Olive"],
+    "productNumber":["RKTT19","RBTT19","RDTT19","ROTT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Mask",
+    "colours":["Putty","Khaki","Black","Olive"],
+    "productNumber":["MPTT19","MKTT19","MBTT19","MOTT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Badge",
+    "colours":["Olive","Khaki","Black","Putty"],
+    "productNumber":["BOTT19","BKTT19","BBTT19","BPTT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Tactical Warrior",
+    "colours":["Denim","Putty","Black","Olive"],
+    "productNumber":["TWDTT19","TWPTT19","TWBTT19","TWOTT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Weapons Change",
+    "colours":["Black","Khaki","Denim","Olive"],
+    "productNumber":["WCBTT19","WCKTT19","WCDTT19","WCOTT19"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Combat Trousers",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDT","SCT"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Flex Combat Trousers",
+    "colours":["3D"],
+    "productNumber":["TDSFT"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"PH 5 Pocket Jeans",
+    "colours":["3D","Shadows","Olive","Khaki","Wolf Brown","Indigo","Military Olive"],
+    "productNumber":["TDPHFPJ","SFPJ","OFPJ","KFPJ","BFPJ","IFPJ","MGFPJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Covert Trousers",
+    "colours":["Military Olive","Khaki","Indigo/Airforce","Olive","Putty/Coyote"],
+    "productNumber":["TT2B","TT2K","TT2A","TT2O","TT2C"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Reactor Shorts",
+    "colours":["3D"],
+    "productNumber":["TDFL"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Warrior Shorts",
+    "colours":["3D","Shadows","Military Olive","Indigo","Khaki","Olive"],
+    "productNumber":["TDWS","SWS","TWSM","TWSI","TWSK","TWSO"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Essential Shorts",
+    "colours":["Khaki","Military Olive","Putty","Indigo"],
+    "productNumber":["KBS","MBS","OBS","IBS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Zip Leafy Hooded Top",
+    "colours":["3D"],
+    "productNumber":["ZLT"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Zip Leafy Pants",
+    "colours":["3D"],
+    "productNumber":["ZLP"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Zip Mesh Suit Top",
+    "colours":["3D"],
+    "productNumber":["ZMT"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Zip Mesh Suit Pants",
+    "colours":["3D"],
+    "productNumber":["ZMP"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ghilly Suit Top",
+    "colours":["3D"],
+    "productNumber":["GT"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ghilly Suit Pants",
+    "colours":["3D"],
+    "productNumber":["GP"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Lined Waist Coat",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDLWC","SLWC"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Wing Shooters Waistcoat",
+    "colours":["3D"],
+    "productNumber":["SJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Tactical Ranger Waistcoat",
+    "colours":["Military Olive","Khaki"],
+    "productNumber":["TW1O","TW1K"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Shooters Glove",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDSG","TDGG"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Thermal Glove",
+    "colours":["Shadows"],
+    "productNumber":["STG"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Hunter Glove",
+    "colours":["3D","Shadows","Black","Olive"],
+    "productNumber":["THG3D","THGS","THGB","THGO"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Double Duty",
+    "colours":["Khaki"],
+    "productNumber":["TDDG"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Patrol Lite",
+    "colours":["Black"],
+    "productNumber":["TPLG"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"SWAT",
+    "colours":["Black","Khaki","Olive"],
+    "productNumber":["TSGB","TSGK","TSGO"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Parka Jacket",
+    "colours":["3D"],
+    "productNumber":["TDLPJ"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies S/S T-Shirt",
+    "colours":["3D"],
+    "productNumber":["LDST"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies L/S Shirt",
+    "colours":["3D"],
+    "productNumber":["LDLS"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Active Leggings",
+    "colours":["3D/Pink"],
+    "productNumber":["TDPAL"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Trousers",
+    "colours":["3D"],
+    "productNumber":["LDT"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Flex Combat Trousers",
+    "colours":["3D"],
+    "productNumber":["TDLSFT"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Storm Jacket",
+    "colours":["3D"],
+    "productNumber":["TDLSJ"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Reactor Hoody",
+    "colours":["3D"],
+    "productNumber":["TDLFH"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Soft Shell Rev. Hoody",
+    "colours":["Olive"],
+    "productNumber":["OSLRH"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Active Hoody",
+    "colours":["3D/Pink"],
+    "productNumber":["TDPLAH"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Micro-Lite Jacket",
+    "colours":["3D","Black","Olive"],
+    "productNumber":["TDLMJ","BLMLJ","OLMLJ"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Micro-Lite Body Warmer",
+    "colours":["3D","Olive"],
+    "productNumber":["TDMLBWS","OMLBWS"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Ladies Active Zipper",
+    "colours":["3D"],
+    "productNumber":["TDLAZ"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Spandex Vest",
+    "colours":["Shadows","3D"],
+    "productNumber":["SLV","TDVL"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Capri Leggings",
+    "colours":["Shadows","3D"],
+    "productNumber":["SLCL","TDCL"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Spandex Leggings",
+    "colours":["Shadows","3D"],
+    "productNumber":["SL","TDL"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Bad Day",
+    "colours":["Ox-Blood","Pink","Denim","Black","Peach"],
+    "productNumber":["LBDX19","LBDP19","LBDD19","LBDB19","LBPC19"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Bokkie",
+    "colours":["Putty","Olive","Black","Pink"],
+    "productNumber":["LBPT19","LBO19","LBB19","LBP19"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Biltong",
+    "colours":["Peach","Lilac","Pink","Black","Putty","Olive","Denim"],
+    "productNumber":["LBPCA19","LBLA19","LBP19","LBBA19","LBPTA19","LBOA19","LBDA19"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Floral",
+    "colours":["Lilac","Peach","Pink","Black","Putty","Olive","Denim","Khaki"],
+    "productNumber":["LFL19","LFPC19","LFP19","LFB19","LFPT19","LFO19","LFD19","LFK19"],
+    "ladies":true,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Youth Parka Jacket",
+    "colours":["3D"],
+    "productNumber":["TDYPJ"],
+    "ladies":false,
+    "youth":true,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Youth 5 Pocket Jeans",
+    "colours":["3D"],
+    "productNumber":["TDYFPJ"],
+    "ladies":false,
+    "youth":true,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Youth Reactor Hoody",
+    "colours":["3D"],
+    "productNumber":["TDYRH"],
+    "ladies":false,
+    "youth":true,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Youth Micro-Lite Jacket",
+    "colours":["3D"],
+    "productNumber":["TDKMJ"],
+    "ladies":false,
+    "youth":true,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Youth Micro-Lite Bodywarmer",
+    "colours":["3D"],
+    "productNumber":["TDYBW"],
+    "ladies":false,
+    "youth":true,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Short Sleeve T-Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDKTS","SKTS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Soft Shell Rev. Hoody",
+    "colours":["Olive"],
+    "productNumber":["OSKRH"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Kids Micro-Lite Jacket",
+    "colours":["3D"],
+    "productNumber":["TDKMJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Kids Micro-Lite Bodywarmer",
+    "colours":["3D"],
+    "productNumber":["TDKBW"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Kids Fleece PJ Set",
+    "colours":["Khaki","Pink"],
+    "productNumber":["KPJS","PPJS"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Long Sleeve Shirt",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDKLS","SLS"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Rain Jacket",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDKRJ","SKRJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":false,
+    "price":420.69
+},
+
+{
+    "name":"Kids Parka Jacket",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDKPJ","SKPJ"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Kids Bermuda",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDKN","SKB"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Kids Reactor Shorts",
+    "colours":["3D"],
+    "productNumber":["TDKRS"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Kids Fleece Onsesie",
+    "colours":["3D"],
+    "productNumber":["I3K"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Kids Trousers",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDKT","SKT"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+]

@@ -1,0 +1,47 @@
+:root{
+    --navigation-colour: rgba(100,100,100,0.5);
+    --font-colour:#ffffff;
+    --background-colour: #d4d4d4;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-colour);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--background-colour);
+}
+
+
+
+
+
+nav {
+    width: 100%;
+  background-color: var(--navigation-colour);
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+#navlist {
+    width: 500px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#navlist li {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+
+
+#topimagebar {
+    width: 100%;
+    height: 50vh;
+    
+}
+
