@@ -5,6 +5,7 @@
     --button-color: #ffae00;
     --button-color-pressed: #cc8b00;
     --button-font-color: #ffffff;
+    --image-background-color:rgb(200, 200, 200);
 
     --transition-time: 200ms;
 }
@@ -50,7 +51,7 @@
     width: 175px;
     height: 175px;
     margin: 15px;
-    background-color:rgb(200, 200, 200);
+    background-color:var(--image-background-color);
     border-radius: 10px;
     position: relative;
 }
@@ -67,7 +68,7 @@
     margin-right: -10px;
     margin-bottom: -4px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: var(--image-background-color);
     border: 4px solid;
     border-color: var(--card-color-normal);
     position: absolute;
