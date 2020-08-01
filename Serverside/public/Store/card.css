@@ -111,12 +111,11 @@
 
 
 
-.card button {
+.card button{
     background-color: var(--button-color);
     color: var(--button-font-color);
     font-weight: bold;
     border: none;
-    border-radius: 0 7px 7px 0;
     padding: 5px;
     height: 100%;
     width: 100%;
@@ -124,6 +123,14 @@
     text-align: center;
 
 }
+.buttonwithselect{
+    border-radius: 0 7px 7px 0;
+}
+.buttonalone {
+    border-radius: 7px;
+}
+
+
 .card select {
     color: #000000;
     font-weight: bold;
