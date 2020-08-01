@@ -1,7 +1,30 @@
-let containers = document.getElementsByClassName("cardContainer");
-let cardArray = [];
-for(let i = 0; i < 0; i++ ){
-     cardArray[i] = document.createElement("div");
-     cardArray[i].className = "cardsmall";
-     containers[0].appendChild(cardArray[i]);
+
+
+let productArray = [];
+let container = document.getElementById("cardcontainer");
+let cards = [];
+
+
+async function getProductData(){
+    const rawData = await fetch('/cardInfo');
+    return await rawData.json();
 }
+
+function createCards(){
+     for(let i = 0; i < productArray.length; i++){
+          cards[i]= new Card(productArray[i],i);
+          cards[i].create(container);
+     }
+}
+
+getProductData().then(data => {
+    productArray = data;
+    createCards();
+});
+
+
+
+
+
+
+
