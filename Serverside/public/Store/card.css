@@ -9,9 +9,16 @@
     --transition-time: 200ms;
 }
 
+#cardcontainer {
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows: repeat(auto-fit,200px);
+    
+}
 
 .card {
-
+    justify-self: center;
     width: 400px;
     height: 200px;
     border-radius: 15px;
