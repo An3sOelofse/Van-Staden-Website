@@ -23,7 +23,7 @@ class Card {
         if(this.colours.length > 1){
             this.colorimg = document.createElement('img');
             this.colorimg.src = "../resources/images/" + this.colours[0] + ".jpg";
-            this.colorimg.className = 'colorimg';
+            this.colorimg.className = 'colorimgoff';
             this.imagecontainer.appendChild(this.colorimg);
         }
 
@@ -49,7 +49,7 @@ class Card {
         if(this.colours.length > 1){
 
             this.select = document.createElement('select');
-            this.select.id = 'color ' + this.name;               ///////////
+            this.select.onchange = () => this.selectChanged();
             this.section.appendChild(this.select);
 
             this.options = [];
@@ -57,7 +57,6 @@ class Card {
                 this.options[i] = document.createElement('option');
                 this.options[i].value = this.colours[i];
                 this.options[i].textContent = this.colours[i];
-                this.options[i].onclick = () => this.optionSelected();
                 this.select.appendChild(this.options[i]);
             }
         }
@@ -65,7 +64,7 @@ class Card {
         this.button = document.createElement('button');
         this.button.className = (this.colours.length>1) ? 'buttonwithselect' :'buttonalone';
         this.button.textContent = 'Add to Cart';
-        this.button.onclick = () => this.optionSelected();
+        //this.button.onclick = () => this.optionChanged();
         this.section.appendChild(this.button);
 
         container.appendChild(this.card);
@@ -76,8 +75,17 @@ class Card {
         console.log('card no ' + this.index + ': ' + message);
     }
 
-    optionSelected(){
-        this.logMessage(this.select.selectedIndex)
+    selectChanged(){
+        this.logMessage(this.select.value);
+        if(this.select.selectedIndex > 0){
+
+            this.colorimg.className = 'colorimgon';
+            this.colorimg.src = "../resources/images/" + this.colours[this.select.selectedIndex] + ".jpg";
+        }
+        else {
+            this.colorimg.className = 'colorimgoff';
+        }
+
     }
 
 
