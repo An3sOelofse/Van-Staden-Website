@@ -51,12 +51,16 @@
     background-color:var(--image-background-color);
     border-radius: 10px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainimg {
-    width: 175px;
-    height: 175px;
+    max-width: 175px;
+    max-height: 175px;
     border-radius: 10px;
+    
 }
 
 .colorimgoff{
