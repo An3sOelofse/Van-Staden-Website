@@ -5,7 +5,7 @@ const express = require('express');
 const { response, json } = require('express');
 const app = express();
 app.listen(port, () => console.log("server is running..."));
-app.use(express.static("Serverside/public"));
+app.use(express.static("public"));
 app.use(express.json());
 
 const fs = require('fs');
