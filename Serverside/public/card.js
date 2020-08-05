@@ -18,10 +18,10 @@ class Card {
         
         this.mainimg = document.createElement('img');
         if(this.colours.length > 1){
-            this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
+            this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
         }
         else{
-            this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + ".png";
+            this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + ".png";
         }
        
 
@@ -88,19 +88,19 @@ class Card {
         let ind = this.select.selectedIndex;
         this.hasReloaded = false;
         this.h3.textContent = 'Product Code: ' + this.productNumber[ind];
-            this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[ind] + ".png"
+            this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[ind] + ".png"
             this.colorimg.className = 'colorimgoff';
         
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
                 if(this.colours.length > 1){
-                    this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
+                    this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
                 }
                 else{
-                    this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + ".png";
+                    this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + ".png";
                 }
                 this.colorimg.className = 'colorimgon';
-                this.colorimg.src = "../resources/images/" + this.colours[ind] + ".jpg";
+                this.colorimg.src = "resources/images/" + this.colours[ind] + ".jpg";
                 console.log(this.name + "does not exists");
                 this.hasReloaded = true;
             }
