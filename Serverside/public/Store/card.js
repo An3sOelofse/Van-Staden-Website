@@ -5,6 +5,7 @@ class Card {
         this.productNumber = cardInformation.productNumber;
         this.price = cardInformation.price;
         this.index = index;
+        this.hasReloaded = false;
     }
 
     create(container){
@@ -16,13 +17,20 @@ class Card {
         this.card.appendChild(this.imagecontainer);
         
         this.mainimg = document.createElement('img');
-        this.mainimg.src = "../resources/images/" + this.name + ".png";
+        if(this.colours.length > 1){
+            this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
+        }
+        else{
+            this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + ".png";
+        }
+       
+
         this.mainimg.className = 'mainimg';
         this.imagecontainer.appendChild(this.mainimg);
 
         if(this.colours.length > 1){
             this.colorimg = document.createElement('img');
-            this.colorimg.src = "../resources/images/" + this.colours[0] + ".jpg";
+            //this.colorimg.src = "../resources/images/" + this.colours[0] + ".jpg";
             this.colorimg.className = 'colorimgoff';
             this.imagecontainer.appendChild(this.colorimg);
         }
@@ -76,16 +84,27 @@ class Card {
     }
 
     selectChanged(){
-        this.logMessage(this.select.value);
-        if(this.select.selectedIndex > 0){
 
-            this.colorimg.className = 'colorimgon';
-            this.colorimg.src = "../resources/images/" + this.colours[this.select.selectedIndex] + ".jpg";
-        }
-        else {
+        let ind = this.select.selectedIndex;
+        this.hasReloaded = false;
+        this.h3.textContent = 'Product Code: ' + this.productNumber[ind];
+            this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[ind] + ".png"
             this.colorimg.className = 'colorimgoff';
+        
+        this.mainimg.onerror = () => {
+            if(!this.hasReloaded){
+                if(this.colours.length > 1){
+                    this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
+                }
+                else{
+                    this.mainimg.src = "../resources/product images/" + this.name.replace(/\//,"") + ".png";
+                }
+                this.colorimg.className = 'colorimgon';
+                this.colorimg.src = "../resources/images/" + this.colours[ind] + ".jpg";
+                console.log(this.name + "does not exists");
+                this.hasReloaded = true;
+            }
         }
-
     }
 
 
