@@ -18,10 +18,10 @@ class Card {
         
         this.mainimg = document.createElement('img');
         if(this.colours.length > 1){
-            this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase() + ".png";
         }
         else{
-            this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + ".png";
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
         }
        
 
@@ -94,10 +94,10 @@ class Card {
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
                 if(this.colours.length > 1){
-                    this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[0] + ".png";
+                    this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0] + ".png";
                 }
                 else{
-                    this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + ".png";
+                    this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
                 }
                 this.colorimg.className = 'colorimgon';
                 this.colorimg.src = "resources/images/" + this.colours[ind] + ".jpg";
