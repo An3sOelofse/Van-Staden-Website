@@ -1,9 +1,10 @@
 console.log("app is running...");
+const port = process.env.PORT||3000;
 
 const express = require('express');
 const { response, json } = require('express');
 const app = express();
-app.listen(3000, () => console.log("server is running..."));
+app.listen(port, () => console.log("server is running..."));
 app.use(express.static("public"));
 app.use(express.json());
 
