@@ -2,8 +2,8 @@
     --card-color-normal: #e8e8e8;
     --card-color-hover: #ffffff;
     --card-font-color: #1b1b1b;
-    --button-color: #ffae00;
-    --button-color-pressed: #cc8b00;
+    --button-color: #103765;
+    --button-color-pressed: #0c2b50;
     --button-font-color: #ffffff;
     --image-background-color:rgb(200, 200, 200);
 
@@ -15,6 +15,8 @@
     gap:20px;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-template-rows: repeat(auto-fit,200px);
+    margin-top: 40px;
+    
     
 }
 
@@ -29,6 +31,7 @@
     justify-content: space-evenly;
     align-items: center;
     transition: ease-in-out var(--transition-time);
+    z-index: 510;
     
 }
 .card:hover{
