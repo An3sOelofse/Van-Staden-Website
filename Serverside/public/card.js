@@ -88,7 +88,7 @@ class Card {
         let ind = this.select.selectedIndex;
         this.hasReloaded = false;
         this.h3.textContent = 'Product Code: ' + this.productNumber[ind];
-            this.mainimg.src = "resources/product images/" + this.name.replace(/\//,"") + " " + this.colours[ind] + ".png"
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[ind].toLowerCase() + ".png"
             this.colorimg.className = 'colorimgoff';
         
         this.mainimg.onerror = () => {
