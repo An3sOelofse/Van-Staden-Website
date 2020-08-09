@@ -94,7 +94,7 @@ class Card {
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
                 if(this.colours.length > 1){
-                    this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0] + ".png";
+                    this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase() + ".png";
                 }
                 else{
                     this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
