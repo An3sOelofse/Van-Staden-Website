@@ -930,7 +930,7 @@
 },
 
 {
-    "name":"Buffy Money Tin",
+    "name":"Buffy Money Tin 6 Pack",
     "colours":["Grey"],
     "productNumber":["BTB4"],
     "ladies":false,
@@ -1118,6 +1118,16 @@
     "name":"Truck",
     "colours":["Olive","Peach","Putty"],
     "productNumber":["I19O","I19PC","I19PT"],
+    "ladies":false,
+    "youth":false,
+    "kids":true,
+    "price":420.69
+},
+
+{
+    "name":"Infant T-Shirt Boys",
+    "colours":["3D","Shadows"],
+    "productNumber":["TDITS","SITS"],
     "ladies":false,
     "youth":false,
     "kids":true,
@@ -1665,7 +1675,7 @@
 },
 
 {
-    "name":"Good 3 Go Bag",
+    "name":"Good 2 Go Bag",
     "colours":["Wolf Brown","Black","Olive","3D"],
     "productNumber":["TDGTG","TDGTG","TDGTG","TDGTG"],
     "ladies":false,
@@ -1866,23 +1876,12 @@
 
 {
     "name":"Ghilly Blanket 1.35x2.8m",
-    "colours":["3D","Shadows"],
+    "colours":["3D"],
     "productNumber":["TDGB"],
     "ladies":false,
     "youth":false,
     "kids":false,
     "price":420.69
-},
-
-{
-    "name":"Pillow Cases",
-    "colours":["3D","Shadows"],
-    "productNumber":["SPC","CPC"],
-    "ladies":false,
-    "youth":false,
-    "kids":false,
-    "price":420.69,
-    "size":["Standard","Continental"]
 }
 
 ]
