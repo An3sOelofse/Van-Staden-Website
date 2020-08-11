@@ -17,23 +17,15 @@ class Card {
         this.card.appendChild(this.imagecontainer);
         
         this.mainimg = document.createElement('img');
-        if(this.colours.length > 1){
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase() + ".png";
-        }
-        else{
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
-        }
-       
-
         this.mainimg.className = 'mainimg';
         this.imagecontainer.appendChild(this.mainimg);
 
         if(this.colours.length > 1){
             this.colorimg = document.createElement('img');
-            //this.colorimg.src = "../resources/images/" + this.colours[0] + ".jpg";
             this.colorimg.className = 'colorimgoff';
             this.imagecontainer.appendChild(this.colorimg);
         }
+        this.loadImages(0);
 
         this.textcontainer = document.createElement('div');
         this.textcontainer.className = 'textcontainer';
@@ -83,28 +75,42 @@ class Card {
         console.log('card no ' + this.index + ': ' + message);
     }
 
-    selectChanged(){
-
-        let ind = this.select.selectedIndex;
+    loadImages(ind){
         this.hasReloaded = false;
-        this.h3.textContent = 'Product Code: ' + this.productNumber[ind];
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[ind].toLowerCase() + ".png"
+
+        if(this.colours.length > 1){
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase().replace(/\//,"") + ".png";
+        }
+        else{
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
+        }
+
+
+        if (this.colorimg){
             this.colorimg.className = 'colorimgoff';
-        
+        }
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
-                if(this.colours.length > 1){
-                    this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase() + ".png";
+                
+                this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
+                
+                if (this.colorimg){
+                    this.colorimg.className = 'colorimgon';
+                    this.colorimg.src = "resources/images/" + this.colours[ind] + ".jpg";
                 }
-                else{
-                    this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
-                }
-                this.colorimg.className = 'colorimgon';
-                this.colorimg.src = "resources/images/" + this.colours[ind] + ".jpg";
                 console.log(this.name + "does not exists");
                 this.hasReloaded = true;
             }
         }
+    }
+
+    selectChanged(){
+
+        this.loadImages(this.select.selectedIndex);
+        
+        this.h3.textContent = 'Product Code: ' + this.productNumber[ind];
+          
+        
     }
 
 
