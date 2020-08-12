@@ -560,7 +560,7 @@
 },
 
 {
-    "name":"Ladies L/S Shirt",
+    "name":"Ladies L/S T-Shirt",
     "colours":["3D"],
     "productNumber":["LDLS"],
     "ladies":true,
@@ -933,16 +933,6 @@
     "name":"Buffy Money Tin 6 Pack",
     "colours":["Grey"],
     "productNumber":["BTB4"],
-    "ladies":false,
-    "youth":false,
-    "kids":true,
-    "price":420.69
-},
-
-{
-    "name":"Buffy 6 Pack",
-    "colours":["Grey"],
-    "productNumber":["BTB1/6"],
     "ladies":false,
     "youth":false,
     "kids":true,
@@ -1826,7 +1816,7 @@
 
 {
     "name":"Rubber Patch Sniper Africa",
-    "colours":["Black","Olive","Khaki"],
+    "colours":["Khaki","Olive","Black"],
     "productNumber":["TRP1","TRP1","TRP1"],
     "ladies":false,
     "youth":false,
@@ -1836,7 +1826,7 @@
 
 {
     "name":"Rubber Patch Sniper Tactical",
-    "colours":["Black","Olive","Khaki"],
+    "colours":["Olive","Black","Khaki"],
     "productNumber":["TRP1","TRP1","TRP1"],
     "ladies":false,
     "youth":false,
