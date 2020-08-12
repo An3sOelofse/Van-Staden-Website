@@ -79,10 +79,10 @@ class Card {
         this.hasReloaded = false;
 
         if(this.colours.length > 1){
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase().replace(/\//,"") + ".png";
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase().replace(/\//,"") + ".jpg";
         }
         else{
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".jpg";
         }
 
 
@@ -92,7 +92,7 @@ class Card {
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
                 
-                this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".png";
+                this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".jpg";
                 
                 if (this.colorimg){
                     this.colorimg.className = 'colorimgon';
