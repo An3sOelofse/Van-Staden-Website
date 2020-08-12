@@ -64,7 +64,6 @@ class Card {
         this.button = document.createElement('button');
         this.button.className = (this.colours.length>1) ? 'buttonwithselect' :'buttonalone';
         this.button.textContent = 'Add to Cart';
-        //this.button.onclick = () => this.optionChanged();
         this.section.appendChild(this.button);
 
         container.appendChild(this.card);
@@ -79,12 +78,12 @@ class Card {
         this.hasReloaded = false;
 
         if(this.colours.length > 1){
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase().replace(/\//,"") + ".jpg";
-        }
-        else{
-            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".jpg";
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[ind].toLowerCase().replace(/\//,"") + " copy.jpg";
         }
 
+        else{
+            this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " copy.jpg";
+        }
 
         if (this.colorimg){
             this.colorimg.className = 'colorimgoff';
@@ -92,7 +91,7 @@ class Card {
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
                 
-                this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + ".jpg";
+                this.mainimg.src = "resources/product images/" + this.name.toLowerCase().replace(/\//,"") + " " + this.colours[0].toLowerCase().replace(/\//,"") + " copy.jpg";
                 
                 if (this.colorimg){
                     this.colorimg.className = 'colorimgon';
@@ -105,10 +104,11 @@ class Card {
     }
 
     selectChanged(){
-
-        this.loadImages(this.select.selectedIndex);
+        console.log("select has changed.....");
+        let index = this.select.selectedIndex;
+        this.loadImages(index);
         
-        this.h3.textContent = 'Product Code: ' + this.productNumber[ind];
+        this.h3.textContent = 'Product Code: ' + this.productNumber[index];
           
         
     }
