@@ -77,6 +77,7 @@ class Card {
         this.button = document.createElement('button');
         this.button.className = (this.colours.length>1) ? 'buttonwithselect' :'buttonalone';
         this.button.textContent = 'Add to Cart';
+        this.button.onclick = () => addToCart(this.index,(this.colours.length>1) ? this.select.selectedIndex : 0);
         this.section.appendChild(this.button);
 
         container.appendChild(this.card);

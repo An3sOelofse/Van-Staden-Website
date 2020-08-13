@@ -5,6 +5,8 @@ let container = document.getElementById("cardcontainer");
 let cards = [];
 let defaultCardAmount = 20;
 
+let myCart = [];
+
 
 async function getProductData(){
     const rawData = await fetch('/cardInfo');
@@ -39,6 +41,20 @@ function loadMoreCards(){
         console.log(moreButton);
 
     }
+}
+
+function addToCart(productIndex,colourIndex){
+    //console.log(productArray[productIndex].name + ' ' +productArray[productIndex].colours[colourIndex] + ' was added to cart');
+    let product = productArray[productIndex];
+    
+    let item = {
+        name: product.name,
+        colour: product.colours[colourIndex],
+        productCode: product.productNumber[colourIndex],
+        price: product.price
+    }
+
+    myCart[myCart.length] = item;
 }
 
 
