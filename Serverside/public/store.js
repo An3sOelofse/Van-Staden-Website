@@ -3,6 +3,7 @@
 let productArray = [];
 let container = document.getElementById("cardcontainer");
 let cards = [];
+let defaultCardAmount = 20;
 
 
 async function getProductData(){
@@ -10,17 +11,35 @@ async function getProductData(){
     return await rawData.json();
 }
 
-function createCards(){
-     for(let i = 0; i < productArray.length; i++){
-          cards[i]= new Card(productArray[i],i);
-          cards[i].create(container);
-     }
+function createCards(startIndex,amount){
+
+    let length = amount + startIndex;
+    if(length > productArray.length){
+        length = productArray.length;
+    }
+
+    for(let i = startIndex; i < length; i++){
+        cards[i]= new Card(productArray[i],i);
+        cards[i].create(container);
+    }
 }
 
 getProductData().then(data => {
     productArray = data;
-    createCards();
+    createCards(0,defaultCardAmount);
 });
+
+function loadMoreCards(){
+    createCards(cards.length,defaultCardAmount);
+    if(cards.length === productArray.length){
+        let moreButton = document.getElementById('loadmorebutton');
+        moreButton.classList.add('off');
+        let moreText = document.getElementById('loadmoretext');
+        moreText.classList.add('on');
+        console.log(moreButton);
+
+    }
+}
 
 
 

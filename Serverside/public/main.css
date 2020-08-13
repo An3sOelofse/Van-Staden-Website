@@ -4,6 +4,7 @@
     --navigation-font-colour: #103765;
     --font-colour:#ffffff;
     --background-colour: #d4d4d4;
+    --background-colour-darker: #c5c5c5;
     --sniper-blue-hover:#103765;
     --sniper-blue-non-hover:#1038657e;
 
@@ -205,6 +206,52 @@ nav::after{
     padding: 20px
     
 }
+
+
+
+.loadmore {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--background-colour-darker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadmorebutton {
+    background-color: var(--sniper-blue-hover);
+    color: whitesmoke;
+    width: 20%;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.loadmorebutton:active{
+    background-color: #0c294b;
+}
+.loadmorebutton:focus{
+    outline: none;
+}
+.loadmorebutton.off{
+    display: none;
+}
+
+.loadmoretext{
+    display: none;
+    color: var(--navigation-font-colour);
+    font-weight: bold;
+}
+.loadmoretext.on{
+    display: block;
+}
+
+
 
 
 
