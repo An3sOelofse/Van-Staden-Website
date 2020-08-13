@@ -20,6 +20,19 @@ class Card {
         this.mainimg.className = 'mainimg';
         this.imagecontainer.appendChild(this.mainimg);
 
+
+
+        this.animationContainer = document.createElement('div');
+        this.animationContainer.className = 'animation-container';
+        this.imagecontainer.appendChild(this.animationContainer);
+        this.loadingAnimationElements = [];
+
+        for(let i = 0;i < 3;i++){
+            this.loadingAnimationElements[i] = document.createElement('div');
+            this.loadingAnimationElements[i].className = 'loading-anim element-' + i;
+            this.animationContainer.appendChild(this.loadingAnimationElements[i]);
+        }
+
         if(this.colours.length > 1){
             this.colorimg = document.createElement('img');
             this.colorimg.className = 'colorimgoff';
@@ -88,6 +101,13 @@ class Card {
         if (this.colorimg){
             this.colorimg.className = 'colorimgoff';
         }
+
+        this.animationContainer.classList.add('on');
+        this.mainimg.addEventListener('load',() => {
+            this.animationContainer.classList.remove('on');
+        });
+
+
         this.mainimg.onerror = () => {
             if(!this.hasReloaded){
                 
@@ -112,6 +132,5 @@ class Card {
           
         
     }
-
 
 }
