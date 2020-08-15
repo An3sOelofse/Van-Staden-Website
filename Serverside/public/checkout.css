@@ -1,0 +1,222 @@
+:root {
+    --popup-background-colour: #e7e7e7;
+    --image-background-colour: #d4d4d4;
+    --border-colour: #103765;
+    --text-colour: #1d1d1d;
+    --remove-button-colour: #1b1b1b;
+    --sniper-blue: #103765;
+    --sniper-blue-dark: #0d2e53;
+}
+.popupbackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000099;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+}
+.popupbackground.off{
+    opacity: 0;
+    pointer-events: none;
+}
+.cartpopup {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--popup-background-colour);
+    z-index: 1000;
+    border-radius: 2vw;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 25vw;
+    grid-template-rows: 1fr auto;
+    gap: 30px;
+    color: var(--text-colour);
+}
+
+
+.highlightcontainer {
+    grid-column: 2;
+    grid-row: 1;
+    
+    
+}
+
+.highlightimagecontainer {
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--image-background-colour);
+    border-radius: 20px;
+}
+.highlightprimaryimg {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.highlightname {
+    justify-self: center;
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+}
+
+
+.cartlist {
+    grid-column:1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.listletcontainer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--image-background-colour);
+    display: grid;
+    grid-template-columns: 100px auto auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'image name name price'
+    'image colour code remove';
+    border-radius: 10px;
+   
+}
+img.primaryimg {
+    max-width: 100px;
+    max-height: 100px;
+    background-color: slateblue;
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    
+}
+
+img.secondaryimg {
+    width: 35px;
+    height: 35px;
+    background-color: olive;
+    border-radius: 50%;
+    grid-area: colour;
+}
+.name {
+    grid-area: name;
+    align-self: center ;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.productcode {
+    grid-area: code ;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+.colourcontainer {
+    grid-area: colour;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.colour {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+.price {
+    grid-area: price;
+    justify-self: end;
+    align-self: center;
+    margin-right: 25px;
+    font-size: 1.5rem;
+}
+.removebutton {
+    grid-area: remove;
+    background-color: var(--remove-button-colour);
+    height: 25px;
+    border-radius: 12.5px;
+    border: solid var(--remove-button-colour) 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    justify-self: end;
+    align-self: center;
+    margin-right: 25px;
+    color: white;
+    transition: 150ms ease-in-out;
+}
+.removebutton:hover {
+    background-color: red;
+    border-color: red;
+}
+.removebutton:active {
+    background-color: darkred;
+    border-color: darkred;
+}
+.removebutton:focus{
+    outline: none;
+}
+
+
+
+
+
+.checkoutbox {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--image-background-colour);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.checkoutbox input {
+    padding: 0;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    height: 30px;
+    background-color: whitesmoke;
+    padding: 3px;
+    margin-bottom: 5px;
+
+}
+.checkoutbox button {
+    border: none;
+    background-color: var(--sniper-blue) ;
+    width: 100%;
+    height: 35px;
+    border-radius: 17.5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.checkoutbox button:active {
+    background-color: var(--sniper-blue-dark);
+}
+.checkoutbox button:focus {
+    outline: none;
+}
+
+.checkoutbox h2 {
+    margin: 0;
+}
+.checkoutbox h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
