@@ -14,6 +14,19 @@
     overflow-x: hidden ;
     scroll-behavior: smooth;
 }
+h1{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+
 
 ::-webkit-scrollbar{
     width: 0.4rem;

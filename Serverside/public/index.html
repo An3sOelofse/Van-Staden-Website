@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="checkout.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -57,11 +58,56 @@
             <button id="loadmorebutton" class="loadmorebutton" onclick="loadMoreCards()">Load More Items</button>
             <p id="loadmoretext" class="loadmoretext">There are no more items to be loaded</p>
         </section>
+
+
+        <section class="cart">
+            <div id="carticon"></div>
+            <div class="popupbackground">
+                    <div class="cartpopup">
+
+                        <div class="highlightcontainer">
+                            <div class="highlightimagecontainer">
+                                <img class="highlightprimaryimg" src="./resources/product images/long sleeve shirt 3d copy.jpg" alt="">
+                            </div>
+                            <h1 class="highlightname">Padded Urban Bush Jacket</h3>
+                        </div>
+
+
+                        <div class="cartlist">
+
+                            <div class="listletcontainer">
+                                <img class="primaryimg" src="./resources/product images/long sleeve shirt 3d copy.jpg" alt="">
+                                <h1 class="name">Padded Urban Bush Jacket</h3>
+                                <div class="colourcontainer">
+                                    <img class="secondaryimg" src="./hello.jpg" alt="">
+                                    <h2 class="colour">Military Olive red</h2>
+                                </div>
+                                <h3 class="productcode">KSDJ</h2>
+                                <h2 class="price">R420,00</h2>
+                                <button class="removebutton">remove</button>
+                            </div>
+
+                        </div>
+
+                        <div class="checkoutbox">
+                            <h2>Total Price:</h2>
+                            <h1>R42069.99</h1>
+                            <input id="emailinput" type="email" placeholder="your email">
+                            <input id="emailinputverify" type="email" placeholder="verify email">
+                            <button>Checkout</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
         
         
     </div>
     
     <script src="card.js"></script>
+    <script src="cartlet.js"></script>
     <script src="store.js"></script>
     
 </body>
