@@ -7,11 +7,67 @@
     --sniper-blue: #103765;
     --sniper-blue-dark: #0d2e53;
 }
+.carticon {
+    position: fixed;
+    width: 70px;
+    height: 80px;
+    top: 100px;
+    left: 0;
+    background-color: var(--sniper-blue-dark);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 10px 10px 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.carticon img {
+    width: 70%;
+    transform-origin: center;
+}
+.carticon:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--sniper-blue);
+}
+.carticon:hover img {
+    animation-name: wiggle;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.carticon.on {
+    opacity: 1;
+}
+
+@keyframes wiggle {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(7deg);
+    }
+    75%{
+        transform: rotate(-7deg);
+    }
+
+}
+
+
+
+
+.noscroll{
+    overflow: hidden;
+}
+
+
+
+
 .popupbackground {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #00000099;
+    background-color: #0f0f0fad;
     z-index: 1200;
     top: 0;
     left: 0;
@@ -20,6 +76,19 @@
 .popupbackground.off{
     opacity: 0;
     pointer-events: none;
+}
+
+#exit{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 2.5%;
+    top: 2.5%;
+    transform-origin: center;
+    transition: 150ms ease-in-out;
+}
+#exit:hover{
+    transform: scale(1.15);
 }
 .cartpopup {
     position: fixed;
@@ -33,7 +102,7 @@
     border-radius: 2vw;
     padding: 2vw;
     display: grid;
-    grid-template-columns: 1fr 25vw;
+    grid-template-columns: 1fr 20vw;
     grid-template-rows: 1fr auto;
     gap: 30px;
     color: var(--text-colour);
@@ -48,8 +117,8 @@
 }
 
 .highlightimagecontainer {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +147,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    overflow-y: scroll;
 }
 .listletcontainer {
     width: 100%;
@@ -90,6 +160,8 @@
     'image name name price'
     'image colour code remove';
     border-radius: 10px;
+    margin-bottom: 20px;
+   
    
 }
 img.primaryimg {

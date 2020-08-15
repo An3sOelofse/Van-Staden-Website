@@ -133,5 +133,15 @@ class Card {
           
         
     }
+    getMainImgDir(){
+        return this.mainimg.src;
+    }
+    getColourImgDir(){
+        if(this.colours.length > 1){
+            (this.colorimg.className == 'colorimgoff') ? ' ' : this.mainimg.src;
+        }
+        return ' ';
+       
+    }
 
 }

@@ -1,7 +1,7 @@
 class Cartlet {
     constructor(options){
         this.name = options.name;
-        this.code = options.code;
+        this.code = options.productCode;
         this.price = options.price;
         this.colour = options.colour;
         this.amount = options.amount;
@@ -26,12 +26,14 @@ class Cartlet {
         this.colourContainerElement = document.createElement('div');
         this.colourContainerElement.className = 'colourcontainer';
         this.containerElement.appendChild(this.colourContainerElement);
-
-        this.colourImgElement = document.createElement('img');
-        this.colourImgElement.className = 'secondaryimg';
-        this.colourImgElement.src = this.colourImgDir;
-        this.colourContainerElement.appendChild(this.colourImgElement);
-
+        
+        if(this.colourImgDir != ' '){
+            this.colourImgElement = document.createElement('img');
+            this.colourImgElement.className = 'secondaryimg';
+            this.colourImgElement.src = this.colourImgDir;
+            this.colourContainerElement.appendChild(this.colourImgElement);
+        }
+        
         this.colourElement = document.createElement('h2');
         this.colourElement.className = 'colour';
         this.colourElement.innerText = this.colour;
@@ -49,6 +51,7 @@ class Cartlet {
 
         this.buttonElement = document.createElement('button');
         this.buttonElement.className = 'removebutton';
+        this.buttonElement.innerText = 'remove';
         this.containerElement.appendChild(this.buttonElement);
 
         container.appendChild(this.containerElement);

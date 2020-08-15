@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlElement">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="noscroll">
     <nav>
         <div>
             <ul id="navlist">
@@ -61,8 +61,11 @@
 
 
         <section class="cart">
-            <div id="carticon"></div>
-            <div class="popupbackground">
+            <div id="carticon" class="carticon" onclick="cartClicked()">
+                <img src="./resources/other images/cart.svg" alt="cart">
+            </div>
+            <div class="popupbackground off" id="checkout">
+                    <img src="./resources/other images/exit.svg" alt="exit" id="exit" onclick="closeCart()">
                     <div class="cartpopup">
 
                         <div class="highlightcontainer">
@@ -73,21 +76,7 @@
                         </div>
 
 
-                        <div class="cartlist">
-
-                            <div class="listletcontainer">
-                                <img class="primaryimg" src="./resources/product images/long sleeve shirt 3d copy.jpg" alt="">
-                                <h1 class="name">Padded Urban Bush Jacket</h3>
-                                <div class="colourcontainer">
-                                    <img class="secondaryimg" src="./hello.jpg" alt="">
-                                    <h2 class="colour">Military Olive red</h2>
-                                </div>
-                                <h3 class="productcode">KSDJ</h2>
-                                <h2 class="price">R420,00</h2>
-                                <button class="removebutton">remove</button>
-                            </div>
-
-                        </div>
+                        <div class="cartlist" id="cartlist"></div>
 
                         <div class="checkoutbox">
                             <h2>Total Price:</h2>

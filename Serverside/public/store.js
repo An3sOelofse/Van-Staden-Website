@@ -2,10 +2,15 @@
 
 let productArray = [];
 let container = document.getElementById("cardcontainer");
+let cartButton = document.getElementById("carticon");
+let checkout = document.getElementById("checkout");
+let cartButtonActive = false;
+let checkoutVisible = false;
 let cards = [];
 let defaultCardAmount = 20;
 
 let myCart = [];
+let cartlets = []; 
 
 
 async function getProductData(){
@@ -44,7 +49,12 @@ function loadMoreCards(){
 }
 
 function addToCart(productIndex,colourIndex){
-    //console.log(productArray[productIndex].name + ' ' +productArray[productIndex].colours[colourIndex] + ' was added to cart');
+    
+    if(!cartButtonActive){
+        cartButton.classList.add('on');
+        cartButtonActive = true;
+    }
+
     let product = productArray[productIndex];
     
     let item = {
@@ -53,8 +63,37 @@ function addToCart(productIndex,colourIndex){
         productCode: product.productNumber[colourIndex],
         price: product.price
     }
+    let cartletOptions = {
+        name: product.name,
+        colour: product.colours[colourIndex],
+        productCode: product.productNumber[colourIndex],
+        price: product.price,
+        amount: 1,
+        mainImgDir: cards[productIndex].getMainImgDir(),
+        colourImgDir: cards[productIndex].getColourImgDir()
+    }
 
     myCart[myCart.length] = item;
+    cartlets[myCart.length] = new Cartlet(cartletOptions);
+    cartlets[myCart.length].create(document.getElementById('cartlist'));
+
+}
+
+function cartClicked(){
+    checkout.classList.remove('off');
+    cartButton.classList.remove('on');
+    cartButtonActive = false;
+    document.getElementById('htmlElement').classList.add('noscroll');
+    document.body.classList.add('noscroll');
+    
+}
+
+function closeCart(){
+    checkout.classList.add('off');
+    cartButton.classList.add('on');
+    cartButtonActive = true;
+    document.getElementById('htmlElement').classList.remove('noscroll');
+    document.body.classList.remove('noscroll');
 }
 
 
