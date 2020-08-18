@@ -82,11 +82,24 @@ function addToCart(productIndex,colourIndex){
         mainImgDir: cards[productIndex].getMainImgDir(),
         colourImgDir: cards[productIndex].getColourImgDir()
     }
+    let cartIndex = myCart.length;
+    myCart[cartIndex] = item;
+    cartlets[cartIndex] = new Cartlet(cartletOptions);
+    cartlets[cartIndex].create(cartIndex);
+    cartlets[cartIndex].appendToContainer(document.getElementById('cartlist'));
 
-    myCart[myCart.length] = item;
-    cartlets[myCart.length] = new Cartlet(cartletOptions);
-    cartlets[myCart.length].create(document.getElementById('cartlist'));
+}
 
+function removeFromCart(index){
+    let cartListContainer = document.getElementById('cartlist');
+    cartListContainer.removeChild(cartListContainer.childNodes[index]);
+
+    myCart.splice(index,1);
+    cartlets.splice(index,1);
+
+    for(let i = 0; i < cartlets.length;i++){
+        cartlets[i].setIndex(i);
+    }
 }
 
 function cartClicked(){

@@ -9,7 +9,8 @@ class Cartlet {
         this.colourImgDir = options.colourImgDir;
     }
 
-    create(container){
+    create(index){
+        this.index = index;
         this.containerElement = document.createElement('div');
         this.containerElement.className ='listletcontainer';
 
@@ -52,8 +53,15 @@ class Cartlet {
         this.buttonElement = document.createElement('button');
         this.buttonElement.className = 'removebutton';
         this.buttonElement.innerText = 'remove';
+        this.buttonElement.onclick = () => removeFromCart(this.index);
         this.containerElement.appendChild(this.buttonElement);
 
+    }
+    appendToContainer(container){
         container.appendChild(this.containerElement);
+    }
+
+    setIndex(index){
+        this.index = index;
     }
 }
