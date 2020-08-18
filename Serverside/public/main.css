@@ -13,6 +13,7 @@
     color: var(--font-colour);
     overflow-x: hidden ;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .noscroll {
