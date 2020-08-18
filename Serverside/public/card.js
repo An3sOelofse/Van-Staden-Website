@@ -8,7 +8,7 @@ class Card {
         this.hasReloaded = false;
     }
 
-    create(container){
+    create(){
         this.card = document.createElement('div');
         this.card.className = 'card';
 
@@ -79,9 +79,10 @@ class Card {
         this.button.textContent = 'Add to Cart';
         this.button.onclick = () => addToCart(this.index,(this.colours.length>1) ? this.select.selectedIndex : 0);
         this.section.appendChild(this.button);
-
-        container.appendChild(this.card);
        
+    }
+    appendToContainer(container){
+        container.appendChild(this.card);
     }
 
     logMessage(message){

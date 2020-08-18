@@ -9,7 +9,9 @@ let navlistOn = false;
 let cartButtonActive = false;
 let checkoutVisible = false;
 let cards = [];
-let defaultCardAmount = 20;
+let filteredCards = cards;
+let defaultCardAmount = 21;
+let currentCardAmount = 0;
 
 let myCart = [];
 let cartlets = []; 
@@ -20,16 +22,14 @@ async function getProductData(){
     return await rawData.json();
 }
 
-function createCards(startIndex,amount){
-
-    let length = amount + startIndex;
-    if(length > productArray.length){
-        length = productArray.length;
-    }
-
-    for(let i = startIndex; i < length; i++){
+function createCards(){
+    for(let i = 0; i < productArray.length; i++){
         cards[i]= new Card(productArray[i],i);
-        cards[i].create(container);
+        cards[i].create();
+    }
+    for(let i = 0; i < defaultCardAmount; i++){
+        cards[i].appendToContainer(container);
+        currentCardAmount++;
     }
 }
 
@@ -39,14 +39,22 @@ getProductData().then(data => {
 });
 
 function loadMoreCards(){
-    createCards(cards.length,defaultCardAmount);
-    if(cards.length === productArray.length){
+    
+    let endpoint = defaultCardAmount + currentCardAmount; 
+    if(endpoint > filteredCards.length){
+        endpoint = filteredCards.length;
+    }
+
+    for(let i = currentCardAmount; i < endpoint; i++ ){
+        filteredCards[i].appendToContainer(container);
+        currentCardAmount++;
+    }
+
+    if(filteredCards.length === currentCardAmount){
         let moreButton = document.getElementById('loadmorebutton');
         moreButton.classList.add('off');
         let moreText = document.getElementById('loadmoretext');
         moreText.classList.add('on');
-        console.log(moreButton);
-
     }
 }
 
@@ -111,6 +119,55 @@ function hamburgerClicked(){
     }
 
 }
+
+function linkClicked(ref){
+
+    container.innerHTML = '';
+    filteredCards = [];
+    currentCardAmount = 0;
+
+    let moreButton = document.getElementById('loadmorebutton');
+    moreButton.classList.remove('off');
+    let moreText = document.getElementById('loadmoretext');
+    moreText.classList.remove('on');
+
+    if(navlistOn){
+        navlist.classList.remove('on');
+        navlistOn = false;
+    }
+
+    if(ref === 'mens'){
+        filteredCards = cards.filter(c => {
+            return (!productArray[c.index].ladies && !productArray[c.index].youth && !productArray[c.index].kids);
+        });
+    }
+    else if(ref === 'ladies'){
+        filteredCards = cards.filter(c => {
+            return (productArray[c.index].ladies);
+        });
+    }
+    else if(ref === 'youth'){
+        filteredCards = cards.filter(c => {
+            return (productArray[c.index].youth);
+        });
+    }
+    else if(ref === 'kids'){
+        filteredCards = cards.filter(c => {
+            return (productArray[c.index].youth);
+        });
+    }
+    else if(ref === 'hats'){
+        
+    }
+    else if(ref === 'acc'){
+        
+    }
+
+    loadMoreCards();
+    filteredCards[0].card.scrollIntoView();
+
+}
+
 
 
 
