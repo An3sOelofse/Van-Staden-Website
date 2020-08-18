@@ -23,6 +23,7 @@
     opacity: 0;
     transition: 200ms ease-in-out;
     pointer-events: none;
+    cursor: pointer;
 }
 .carticon img {
     width: 70%;

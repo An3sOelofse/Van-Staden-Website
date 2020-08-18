@@ -257,6 +257,7 @@ nav::after{
     text-decoration: none;
     text-align: center;
     display: block;
+    cursor: pointer;
 }
 .loadmorebutton:active{
     background-color: #0c294b;
@@ -347,6 +348,7 @@ nav::after{
         justify-content: center;
         align-items: center;
         z-index: 2000;
+        cursor: pointer;
     }
     
 
