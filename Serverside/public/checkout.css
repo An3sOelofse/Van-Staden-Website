@@ -251,7 +251,7 @@ img.secondaryimg {
 .checkoutbox {
     grid-area: checkout;
     background-color: var(--image-background-colour);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
