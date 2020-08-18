@@ -4,6 +4,8 @@ let productArray = [];
 let container = document.getElementById("cardcontainer");
 let cartButton = document.getElementById("carticon");
 let checkout = document.getElementById("checkout");
+let navlist = document.getElementById("navlist");
+let navlistOn = false;
 let cartButtonActive = false;
 let checkoutVisible = false;
 let cards = [];
@@ -96,6 +98,18 @@ function closeCart(){
     document.getElementById('htmlElement').classList.remove('noscroll');
     document.getElementById('nav').classList.remove('invisible');
     document.body.classList.remove('noscroll');
+}
+
+function hamburgerClicked(){
+    if(!navlistOn){
+        navlist.classList.add('on');
+        navlistOn = true;
+    }
+    else{
+        navlist.classList.remove('on');
+        navlistOn = false;
+    }
+
 }
 
 
