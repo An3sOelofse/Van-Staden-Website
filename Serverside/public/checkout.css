@@ -13,7 +13,7 @@
     height: 80px;
     top: 50px;
     left: 0;
-    background-color: var(--sniper-blue-dark);
+    background-color: #d6d6d6;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 10px 10px 0;
     z-index: 2000;
@@ -30,7 +30,7 @@
 }
 .carticon:hover {
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
-    background-color: var(--sniper-blue);
+    background-color: #e6e6e6;
 }
 .carticon:hover img {
     animation-name: wiggle;
@@ -300,7 +300,8 @@ img.secondaryimg {
         width: 80px;
         height: 60px;
         top: 0;
-        left: 0;
+        left: 100%;
+        transform: translateX(-120px);
         pointer-events: none;
         box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
     }
@@ -308,7 +309,7 @@ img.secondaryimg {
         box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
     }
     .carticon img {
-        filter: invert(90%);
+       
         width: 50%;
 
     }

@@ -80,6 +80,9 @@ nav {
 #hamburger {
     display: none;
 }
+.navlogo {
+display: none;
+}
 
 nav::after{
     content: ' ';
@@ -284,6 +287,7 @@ nav::after{
         position: fixed;
         z-index: 1500;
         transition: 150ms ease-in-out;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav.invisible {
@@ -294,45 +298,14 @@ nav::after{
     nav::after {
         display: none;
     }
-
-    #navlist {
-        flex-direction: row;        width: 100%;
-        height: 60px;
+    .navlogo{
+        position: fixed;
+        display: block;
+        top: 10px;
+        left: 15px;
+        z-index: 2000;
+        max-height: 40px;
     }
-
-    #navlist li {
-        padding:10px 10px 10px 10px;
-        font-size: 1.2rem;
-      
-    }
-    #navlist li:hover {
-        font-size: 1.3rem;
-    }
-
-
-    #logo{
-        width: 85%;
-        z-index:450;
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .contact {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #downarrow{
-        width: 7%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    
-}
-
-@media all and (max-width: 500px){
 
     #navlist {
         height: 400px;
@@ -375,9 +348,41 @@ nav::after{
         align-items: center;
         z-index: 2000;
     }
+    
+
     #hamburger img {
-        max-width: 80%;
+        width: 80%;
+        transition: 250ms ease-in-out;
     }
+    #hamburger:hover img{
+        width: 90%;
+    }
+
+    #logo{
+        width: 85%;
+        z-index:450;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #downarrow{
+        width: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    
+}
+
+@media all and (max-width: 500px){
+
+   
 
     .contact img {
         width: 6rem;
