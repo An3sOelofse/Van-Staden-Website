@@ -52,6 +52,7 @@ h3{
 body {
     margin: 0px;
     background-color: var(--background-colour);
+    overflow-x: hidden;
 }
 
 
@@ -240,11 +241,11 @@ nav::after{
 .loadmorebutton {
     background-color: var(--sniper-blue-hover);
     color: whitesmoke;
-    width: 20%;
-    height: 30px;
+    width: 40%;
+    height: 40px;
     font-weight: bold;
     border: none;
-    border-radius: 7px;
+    border-radius: 10px;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -269,6 +270,118 @@ nav::after{
 }
 
 
+@media all and (max-width: 800px){
+    nav {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        background-color: #d6d6d6;
+        position: fixed;
+        z-index: 1500;
+        transition: 150ms ease-in-out;
+    }
+
+    nav.invisible {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    nav::after {
+        display: none;
+    }
+
+    #navlist {
+        flex-direction: row;
+    }
+    #navlist ul {
+        width: 100%;
+        height: 60px;
+    }
+
+    #navlist li {
+        padding:10px 10px 10px 10px;
+        font-size: 1.2rem;
+      
+    }
+    #navlist li:hover {
+        font-size: 1.3rem;
+    }
 
 
+    #logo{
+        width: 85%;
+        z-index:450;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
+    #downarrow{
+        width: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    
+}
+
+@media all and (max-width: 500px){
+
+    #navlist {
+        height: 60px;
+        margin: 0;
+    }
+    
+
+    #navlist li {
+        padding:10px 10px 10px 10px;
+        font-size: 0.1rem;
+      
+    }
+    #navlist li:hover {
+        font-size: 1.1rem;
+    }
+
+    .contact img {
+        width: 6rem;
+        padding-right: 15px;
+    }
+    .contact h5 {
+        font-size: 1.7rem;
+       
+    }
+    .contact h6 {
+        font-size: 0.9rem;
+        margin-top: 14px;
+    }
+    
+    .contactcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px
+        
+    }
+
+    #topimagebar {
+        width: 100%;
+        height: 90vh;        
+    }
+    
+    #topimagebar::after{
+        background-size: 100% 90vh;
+        width: 100%;
+        height: 90vh;
+    }
+
+    #downarrow{
+        width: 15%;
+        bottom: 10%;
+    }
+
+}

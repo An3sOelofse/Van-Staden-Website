@@ -11,7 +11,7 @@
     position: fixed;
     width: 70px;
     height: 80px;
-    top: 100px;
+    top: 50px;
     left: 0;
     background-color: var(--sniper-blue-dark);
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -21,6 +21,8 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    transition: 200ms ease-in-out;
+    pointer-events: none;
 }
 .carticon img {
     width: 70%;
@@ -38,6 +40,7 @@
 }
 .carticon.on {
     opacity: 1;
+    pointer-events: inherit;
 }
 
 @keyframes wiggle {
@@ -104,16 +107,16 @@
     display: grid;
     grid-template-columns: 1fr 20vw;
     grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "list highlight"
+    "list checkout";
     gap: 30px;
     color: var(--text-colour);
 }
 
 
 .highlightcontainer {
-    grid-column: 2;
-    grid-row: 1;
-    
-    
+    grid-area: highlight;  
 }
 
 .highlightimagecontainer {
@@ -141,8 +144,7 @@
 
 
 .cartlist {
-    grid-column:1;
-    grid-row: span 2;
+    grid-area: list;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -155,9 +157,10 @@
     background-color: var(--image-background-colour);
     display: grid;
     grid-template-columns: 100px auto auto 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
     grid-template-areas: 
     'image name name price'
+    'image colour code remove'
     'image colour code remove';
     border-radius: 10px;
     margin-bottom: 20px;
@@ -181,6 +184,7 @@ img.secondaryimg {
     background-color: olive;
     border-radius: 50%;
     grid-area: colour;
+    margin-right: 10px;
 }
 .name {
     grid-area: name;
@@ -204,7 +208,6 @@ img.secondaryimg {
     margin-bottom: 10px;
 }
 .colour {
-    margin-left: 10px;
     font-size: 1.2rem;
 }
 .price {
@@ -245,8 +248,7 @@ img.secondaryimg {
 
 
 .checkoutbox {
-    grid-column: 2;
-    grid-row: 2;
+    grid-area: checkout;
     background-color: var(--image-background-colour);
     border-radius: 20px;
     padding: 10px;
@@ -291,4 +293,81 @@ img.secondaryimg {
 .checkoutbox h1 {
     margin: 0;
     margin-bottom: 10px;
+}
+
+@media all and (max-width:800px) {
+    .carticon {
+        width: 80px;
+        height: 60px;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+    .carticon:hover {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    }
+    .carticon img {
+        filter: invert(90%);
+        width: 50%;
+
+    }
+    .carticon.on {
+        background-color: #ffffff00;
+        pointer-events: inherit;
+    }
+
+    .cartpopup {
+        grid-template-columns: 1fr 20vw;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "list list"
+        "checkout checkout";
+        gap: 30px;
+    }
+    .highlightcontainer {
+        display: none;  
+    }
+}
+
+@media all and (max-width: 500px) {
+    .listletcontainer {
+        width: 100%;
+        height: 165px;
+        grid-template-columns: 100px auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'name name name name'
+        'image colour colour price'
+        'image code code remove';
+    }
+
+    .price {
+        justify-self: center;
+        align-self: center;
+        margin-right: 5px;
+        font-size: 1.2rem;
+    }
+    .removebutton {
+        justify-self: center;
+        align-self: center;
+        margin-right: 0px;
+    }
+    .colourcontainer {
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+    .productcode{
+        margin-bottom: 0;
+    }
+    .cartpopup {
+        transform: translateY(-45%) translateX(-50%);
+        width: 90%;
+        height: 85%;
+    }
+    
+    
 }

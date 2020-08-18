@@ -84,6 +84,7 @@ function cartClicked(){
     cartButton.classList.remove('on');
     cartButtonActive = false;
     document.getElementById('htmlElement').classList.add('noscroll');
+    document.getElementById('nav').classList.add('invisible');
     document.body.classList.add('noscroll');
     
 }
@@ -93,6 +94,7 @@ function closeCart(){
     cartButton.classList.add('on');
     cartButtonActive = true;
     document.getElementById('htmlElement').classList.remove('noscroll');
+    document.getElementById('nav').classList.remove('invisible');
     document.body.classList.remove('noscroll');
 }
 
