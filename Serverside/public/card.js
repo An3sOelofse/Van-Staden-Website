@@ -96,6 +96,7 @@ class Card {
         this.section.appendChild(this.button);
        
     }
+
     appendToContainer(container){
         container.appendChild(this.card);
     }
@@ -128,7 +129,7 @@ class Card {
                 
                 if (this.colorimg){
                     this.colorimg.className = 'colorimgon';
-                    this.colorimg.src = "resources/images/" + this.colours[ind] + ".jpg";
+                    this.colorimg.src = "resources/colour%20images/" + this.colours[ind].toLowerCase().replace(/\//,"") + ".png";
                 }
                 console.log(this.name + "does not exists");
                 this.hasReloaded = true;
@@ -168,7 +169,7 @@ class Card {
 
     getColourImgDir(){
         if(this.colours.length > 1){
-            (this.colorimg.className == 'colorimgoff') ? ' ' : this.mainimg.src;
+            return (this.colorimg.className == 'colorimgoff') ? ' ' : this.colorimg.src;
         }
         return ' ';
        
