@@ -3,7 +3,8 @@ class Card {
         this.name = cardInformation.name;
         this.colours = cardInformation.colours;
         this.productNumber = cardInformation.productNumber;
-        this.price = cardInformation.price;
+        this.sizes = cardInformation.sizes
+        this.prices = cardInformation.prices;
         this.index = index;
         this.hasReloaded = false;
     }
@@ -49,7 +50,7 @@ class Card {
         this.textcontainer.appendChild(this.h1);
 
         this.h2 = document.createElement('h2');
-        this.h2.textContent = 'Price: R' + this.price;
+        this.h2.textContent = 'Price: R' + this.prices[0][0];
         this.textcontainer.appendChild(this.h2);
         
         this.h3 = document.createElement('h3');
@@ -58,6 +59,18 @@ class Card {
         
         this.section = document.createElement('section');
         this.textcontainer.appendChild(this.section);
+
+            this.selectSize = document.createElement('select');
+            this.selectSize.className = 'sizeselect';
+            this.selectSize.onchange = () => this.selectSizeChanged();
+            this.section.appendChild(this.selectSize);
+            this.optionsSize = [];
+            for(let i = 0; i < this.sizes.length; i++){
+                this.optionsSize[i] = document.createElement('option');
+                this.optionsSize[i].value = this.sizes[i];
+                this.optionsSize[i].textContent = this.sizes[i];
+                this.selectSize.appendChild(this.optionsSize[i]);
+            }
         
         if(this.colours.length > 1){
 
@@ -74,19 +87,17 @@ class Card {
             }
         }
 
+        
+
         this.button = document.createElement('button');
         this.button.className = (this.colours.length>1) ? 'buttonwithselect' :'buttonalone';
         this.button.textContent = 'Add to Cart';
-        this.button.onclick = () => addToCart(this.index,(this.colours.length>1) ? this.select.selectedIndex : 0);
+        this.button.onclick = () => addToCart(this.index,this.selectSize.selectedIndex,(this.colours.length>1) ? this.select.selectedIndex : 0);
         this.section.appendChild(this.button);
        
     }
     appendToContainer(container){
         container.appendChild(this.card);
-    }
-
-    logMessage(message){
-        console.log('card no ' + this.index + ': ' + message);
     }
 
     loadImages(ind){
@@ -126,17 +137,35 @@ class Card {
     }
 
     selectChanged(){
-        console.log("select has changed.....");
         let index = this.select.selectedIndex;
         this.loadImages(index);
-        
         this.h3.textContent = 'Product Code: ' + this.productNumber[index];
-          
-        
+        let sizeIndex = 0;
+        if(this.prices.length > 1 && this.colours.length >1){
+            index = this.select.selectedIndex;
+        }
+        if(this.prices[index].length > 0){
+            sizeIndex = this.selectSize.selectedIndex;
+        }
+        this.h2.textContent = 'Price: R' + this.prices[index][sizeIndex];
     }
+
+    selectSizeChanged(){
+        let sizeIndex = 0;
+        let colourIndex = 0;
+        if(this.prices.length > 1 && this.colours.length >1){
+            colourIndex = this.select.selectedIndex;
+        }
+        if(this.prices[colourIndex].length>0){
+            sizeIndex = this.selectSize.selectedIndex;
+        }
+        this.h2.textContent = 'Price: R' + this.prices[colourIndex][sizeIndex];
+    }
+
     getMainImgDir(){
         return this.mainimg.src;
     }
+
     getColourImgDir(){
         if(this.colours.length > 1){
             (this.colorimg.className == 'colorimgoff') ? ' ' : this.mainimg.src;

@@ -14,6 +14,7 @@ let defaultCardAmount = 21;
 let currentCardAmount = 0;
 
 let myCart = [];
+let totalPrice = 0;
 let cartlets = []; 
 
 
@@ -21,6 +22,11 @@ async function getProductData(){
     const rawData = await fetch('/cardInfo');
     return await rawData.json();
 }
+
+getProductData().then(data => {
+    productArray = data;
+    createCards();
+});
 
 function createCards(){
     for(let i = 0; i < productArray.length; i++){
@@ -32,11 +38,6 @@ function createCards(){
         currentCardAmount++;
     }
 }
-
-getProductData().then(data => {
-    productArray = data;
-    createCards(0,defaultCardAmount);
-});
 
 function loadMoreCards(){
     
@@ -58,7 +59,7 @@ function loadMoreCards(){
     }
 }
 
-function addToCart(productIndex,colourIndex){
+function addToCart(productIndex,sizeIndex,colourIndex){
     
     if(!cartButtonActive){
         cartButton.classList.add('on');
@@ -71,17 +72,21 @@ function addToCart(productIndex,colourIndex){
         name: product.name,
         colour: product.colours[colourIndex],
         productCode: product.productNumber[colourIndex],
-        price: product.price
+        price: product.prices[colourIndex][sizeIndex],
+        size: product.sizes[sizeIndex]
     }
     let cartletOptions = {
         name: product.name,
         colour: product.colours[colourIndex],
         productCode: product.productNumber[colourIndex],
-        price: product.price,
+        price: product.prices[colourIndex][sizeIndex],
+        size: product.sizes[sizeIndex],
         amount: 1,
         mainImgDir: cards[productIndex].getMainImgDir(),
         colourImgDir: cards[productIndex].getColourImgDir()
     }
+    totalPrice += item.price
+    document.getElementById('totalprice').innerText = 'R' + totalPrice;
     let cartIndex = myCart.length;
     myCart[cartIndex] = item;
     cartlets[cartIndex] = new Cartlet(cartletOptions);
@@ -94,12 +99,23 @@ function removeFromCart(index){
     let cartListContainer = document.getElementById('cartlist');
     cartListContainer.removeChild(cartListContainer.childNodes[index]);
 
+    totalPrice -= myCart[index].price;
+    document.getElementById('totalprice').innerText = 'R' + totalPrice;
+
     myCart.splice(index,1);
     cartlets.splice(index,1);
+   
 
     for(let i = 0; i < cartlets.length;i++){
         cartlets[i].setIndex(i);
     }
+}
+
+function listletClicked(imageDirectory,name){
+    let higlightImg = document.getElementById('highlightimg');
+    let higlightTxt = document.getElementById('highlighttxt');
+    higlightImg.src = imageDirectory;
+    higlightTxt.innerText = name;
 }
 
 function cartClicked(){
@@ -185,6 +201,8 @@ function linkClicked(ref){
     filteredCards[0].card.scrollIntoView();
 
 }
+
+
 
 
 

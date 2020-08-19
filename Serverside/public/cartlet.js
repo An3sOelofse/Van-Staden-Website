@@ -4,6 +4,7 @@ class Cartlet {
         this.code = options.productCode;
         this.price = options.price;
         this.colour = options.colour;
+        this.size = options.size;
         this.amount = options.amount;
         this.mainImgDir = options.mainImgDir;
         this.colourImgDir = options.colourImgDir;
@@ -13,6 +14,7 @@ class Cartlet {
         this.index = index;
         this.containerElement = document.createElement('div');
         this.containerElement.className ='listletcontainer';
+        this.containerElement.onclick = () => listletClicked(this.mainImgDir,this.name);
 
         this.mainImgElement = document.createElement('img');
         this.mainImgElement.className = 'primaryimg';
@@ -42,7 +44,7 @@ class Cartlet {
 
         this.codeElement = document.createElement('h3');
         this.codeElement.className = 'productcode';
-        this.codeElement.innerText = this.code;
+        this.codeElement.innerText = this.code + ' - Size: ' + this.size;
         this.containerElement.appendChild(this.codeElement);
 
         this.priceElement = document.createElement('h2');
@@ -55,6 +57,7 @@ class Cartlet {
         this.buttonElement.innerText = 'remove';
         this.buttonElement.onclick = () => removeFromCart(this.index);
         this.containerElement.appendChild(this.buttonElement);
+
 
     }
     appendToContainer(container){
