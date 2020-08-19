@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product Data</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="warning">
+        <h1>WARNING: CHANGES CANNOT BE UNDONE</h1>
+    </section>
+
+
+    <section class="header">
+        <button>Add New Item</button>
+        <button>Remove Items</button>
+        <button>Edit Items</button>
+    </section>
+
+
+    <section class="add-new-item">
+
+        <div class="inputs">
+            <label for="name">
+                Product Name
+                <input type="text" id="name">
+            </label>
+            <label for="name">
+                Product Colours
+                <input type="text" id="colours">
+            </label>
+            <label for="name">
+                Product Codes
+                <input type="text" id="codes">
+            </label>
+            <label for="name">
+                Product Sizes
+                <input type="text" id="sizes">
+            </label>
+            <label for="name">
+                Product Prices
+                <input type="text" id="prices">
+            </label>
+        </div>
+
+        <div class="checkboxes">
+            <label for="ladies">
+                <input type="checkbox">
+                Ladies
+            </label>
+            <label for="youth">
+                <input type="checkbox">
+                Youth
+            </label>
+            <label for="kids">
+                <input type="checkbox">
+                Kids
+            </label>
+            <label for="hats">
+                <input type="checkbox">
+                Hats
+            </label>
+            <label for="accesories">
+                <input type="checkbox">
+                Accesories
+            </label>
+
+        </div>
+
+        <div class="cardcontainer"></div>
+
+        <div class="images-selection">
+            <select name="ImgColourSelect" id="img-colour-select"></select>
+            <img src="" alt="Large Image" id="main-img">
+            <img src="" alt="Colour Image" id="colour-img">
+            <button id="imgSubmit">Submit</button>
+        </div>
+
+    </section>
+
+
+    <section class="remove-items">
+        <label for="search">
+            Search Product Name
+            <input type="text" id="search">
+        </label>
+        <div id="cardcontainer"></div>
+    </section>
+
+
+    <section class="edit-items"></section>
+
+    
+</body>
+</html>
