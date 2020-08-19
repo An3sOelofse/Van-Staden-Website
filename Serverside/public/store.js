@@ -175,6 +175,11 @@ function linkClicked(ref){
     else if(ref === 'acc'){
         
     }
+    else if(ref === 'all'){
+        filteredCards = cards.filter(c => {
+            return (true);
+        });
+    }
 
     loadMoreCards();
     filteredCards[0].card.scrollIntoView();
