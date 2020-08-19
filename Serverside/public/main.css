@@ -312,7 +312,7 @@ nav::after{
     #navlist {
         height: 400px;
         width: 100%;
-        margin-top: 200px;
+        margin-top: 300px;
         padding-bottom: 20px;
         background-color: #d6d6d6;
         box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
