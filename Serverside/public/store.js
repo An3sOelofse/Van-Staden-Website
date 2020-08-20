@@ -21,7 +21,7 @@ let cartlets = [];
 
 
 async function getProductData(){
-    const rawData = await fetch('/cardInfo');
+    const rawData = await fetch('/get-product-data');
     return await rawData.json();
 }
 
@@ -237,7 +237,7 @@ function checkoutProducts(email){
 }
 
 async function sendData(options){
-    const feedback = await fetch('/sendData',options);
+    const feedback = await fetch('/send-cart-information',options);
     const answer = await feedback.json();
     alert(answer.feedback);
 }

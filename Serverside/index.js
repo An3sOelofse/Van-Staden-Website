@@ -2,35 +2,59 @@ require('dotenv').config();
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 const express = require('express');
+const { request } = require('express');
 const app = express();
+
+
 const port = process.env.PORT||3000;
 
 
 app.use(express.json());
 app.use(express.static("public"));
+app.get("/get-product-data",sendProductList);
+app.post("/send-cart-information",receiveCartInformation,formatEmailString,sendEmail);
 app.listen(port, () => console.log("server is running..."));
 
 
-
-let rawdata = fs.readFileSync('products.json');
-let products = JSON.parse(rawdata);
-sendJSON("/cardInfo",products);
-function sendJSON(path,data){
-    app.get(path,(req,res) => {
-        res.json(data);
-    });
+function sendProductList(req,res,next){
+    let products = JSON.parse(fs.readFileSync('products.json'));
+    res.json(products);
+    next();
 }
 
-app.post("/sendData",receiveData);
-function receiveData(request,response){
-    console.log(request.body);
-    response.json({
-        feedback:'Your Items were successfully received.'
-    });
+function receiveCartInformation(req,res,next){
+    if(req.body){
+        res.json({feedback:'Your Items were successfully received.'});
+    }
+    next();
 }
 
-//sendEmail('an3soelofse@gmail.com','#Hackerman');
-function sendEmail(address,messageString){
+function formatEmailString(req,res,next){
+    let data = req.body
+    let emailAddress = data.shift();
+    
+
+    let emailText = 'You have ordered these Items: \n';
+    
+    data.forEach(product => {
+        let productline = 
+        `
+        ${product.name}  @ R${product.price}
+        colour: ${product.colour}  size: ${product.size}
+        Code: ${product.productCode}
+        `
+        emailText = emailText.concat(productline)
+    });
+
+    emailText = emailText.concat('\n\nWe will contact you shortly to provide our banking details and your receipt.');
+    console.log(emailText);
+    
+    res.emailAddress = emailAddress;
+    res.emailText = emailText;
+    next();
+}
+
+function sendEmail(req,res,next){
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -42,9 +66,9 @@ function sendEmail(address,messageString){
 
     let mailoptions = {
         from: process.env.EMAIL,
-        to: address,
-        subject: 'test',
-        text: messageString
+        to: res.emailAddress,
+        subject: 'You ordered these items from Sniper Target DIY',
+        text: res.emailText
     }
 
     transporter.sendMail(mailoptions,(err,inf) =>{
@@ -56,5 +80,5 @@ function sendEmail(address,messageString){
         }
     });
 
-
+    next();
 }
