@@ -6,7 +6,7 @@ let cartButton = document.getElementById("carticon");
 let checkout = document.getElementById("checkout");
 let navlist = document.getElementById("navlist");
 let emailInput1 = document.getElementById('emailinput');
-let emailInput2= document.getElementById('emailinputverify');
+let emailInput2 = document.getElementById('emailinputverify');
 let navlistOn = false;
 let cartButtonActive = false;
 let checkoutVisible = false;
@@ -240,6 +240,8 @@ async function sendData(options){
     const feedback = await fetch('/send-cart-information',options);
     const answer = await feedback.json();
     alert(answer.feedback);
+    window.location.reload();
+
 }
 
 
