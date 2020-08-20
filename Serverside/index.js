@@ -1,15 +1,15 @@
 require('dotenv').config();
-const express = require('express');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
+const express = require('express');
+const app = express();
 const port = process.env.PORT||3000;
 
 
-const { response, json } = require('express');
-const app = express();
-app.listen(port, () => console.log("server is running..."));
-app.use(express.static("public"));
 app.use(express.json());
+app.use(express.static("public"));
+app.listen(port, () => console.log("server is running..."));
+
 
 
 let rawdata = fs.readFileSync('products.json');
@@ -25,7 +25,7 @@ app.post("/sendData",receiveData);
 function receiveData(request,response){
     console.log(request.body);
     response.json({
-        status:'success'
+        feedback:'Your Items were successfully received.'
     });
 }
 

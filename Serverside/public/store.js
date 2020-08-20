@@ -5,6 +5,8 @@ let container = document.getElementById("cardcontainer");
 let cartButton = document.getElementById("carticon");
 let checkout = document.getElementById("checkout");
 let navlist = document.getElementById("navlist");
+let emailInput1 = document.getElementById('emailinput');
+let emailInput2= document.getElementById('emailinputverify');
 let navlistOn = false;
 let cartButtonActive = false;
 let checkoutVisible = false;
@@ -202,6 +204,43 @@ function linkClicked(ref){
 
 }
 
+function checkoutClicked(){
+
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput1.value)){
+        if(emailInput1.value === emailInput2.value){
+
+            checkoutProducts(emailInput1.value);
+        }
+        else{
+            alert('Emails do not match. Please check for errors.');
+        }
+    }
+    else{
+        alert('Please enter a valid email address.');
+    }
+}
+
+function checkoutProducts(email){
+
+    myCart.unshift(email);
+
+
+    const options = {
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify(myCart)
+    };
+
+    sendData(options);
+}
+
+async function sendData(options){
+    const feedback = await fetch('/sendData',options);
+    const answer = await feedback.json();
+    alert(answer.feedback);
+}
 
 
 
