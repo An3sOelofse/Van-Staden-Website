@@ -6,6 +6,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -17,6 +19,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100, 200, 300], [120, 220, 320]]
 },
@@ -28,6 +32,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -39,6 +45,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -50,6 +58,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -61,6 +71,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -72,6 +84,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -83,6 +97,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -94,6 +110,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -105,6 +123,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -116,6 +136,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -127,6 +149,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -138,6 +162,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -149,6 +175,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -160,6 +188,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -171,6 +201,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -182,6 +214,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -193,6 +227,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -204,6 +240,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -215,6 +253,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -226,6 +266,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -237,6 +279,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -248,6 +292,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -259,6 +305,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -270,6 +318,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -281,6 +331,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -292,6 +344,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -303,6 +357,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -314,6 +370,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -325,6 +383,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -336,6 +396,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -347,6 +409,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -358,6 +422,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -369,6 +435,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -380,6 +448,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -391,6 +461,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -402,6 +474,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -413,6 +487,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -424,6 +500,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -435,6 +513,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -446,6 +526,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -457,6 +539,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -468,6 +552,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -479,6 +565,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -490,6 +578,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -501,6 +591,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -512,6 +604,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -523,6 +617,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -534,6 +630,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -545,6 +643,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -556,6 +656,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -567,6 +669,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -578,6 +682,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -589,6 +695,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -600,6 +708,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -611,6 +721,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -622,6 +734,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -633,6 +747,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -644,6 +760,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -655,6 +773,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -666,6 +786,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -677,6 +799,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -688,6 +812,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -699,6 +825,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -710,6 +838,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300],[120,220,320]]
 },
@@ -721,6 +851,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -732,6 +864,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -743,6 +877,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -754,6 +890,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -765,6 +903,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -776,6 +916,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -787,6 +929,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -798,6 +942,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -809,6 +955,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -820,6 +968,8 @@
     "ladies":false,
     "youth":true,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -831,6 +981,8 @@
     "ladies":false,
     "youth":true,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -842,6 +994,8 @@
     "ladies":false,
     "youth":true,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -853,6 +1007,8 @@
     "ladies":false,
     "youth":true,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -864,6 +1020,8 @@
     "ladies":false,
     "youth":true,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -875,6 +1033,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -886,6 +1046,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -897,6 +1059,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -908,6 +1072,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -919,6 +1085,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -930,6 +1098,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -941,6 +1111,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -952,6 +1124,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -963,6 +1137,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -974,6 +1150,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -985,6 +1163,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -996,6 +1176,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1007,6 +1189,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1018,6 +1202,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1029,6 +1215,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1040,6 +1228,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1051,6 +1241,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1062,6 +1254,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1073,6 +1267,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1084,6 +1280,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1095,6 +1293,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1106,6 +1306,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1117,6 +1319,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1128,15 +1332,11 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
-
-
-
-
-
-
 {
     "name":"Born Hunter",
     "colours":["Peach","Khaki","Denim","Olive"],
@@ -1144,6 +1344,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1155,6 +1357,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1166,6 +1370,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1177,6 +1383,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1188,6 +1396,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1199,6 +1409,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1210,6 +1422,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1221,6 +1435,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1232,6 +1448,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1243,6 +1461,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1254,6 +1474,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1265,6 +1487,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1276,6 +1500,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1287,6 +1513,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1298,6 +1526,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1309,6 +1539,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1320,6 +1552,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1331,6 +1565,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1342,6 +1578,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1353,6 +1591,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1364,6 +1604,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1375,6 +1617,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1386,6 +1630,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1397,6 +1643,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1408,6 +1656,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1419,6 +1669,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1430,6 +1682,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1441,6 +1695,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1452,6 +1708,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1463,6 +1721,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1474,6 +1734,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1485,6 +1747,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1496,6 +1760,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1507,6 +1773,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1518,6 +1786,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1529,6 +1799,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1540,6 +1812,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1551,6 +1825,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1562,6 +1838,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1573,6 +1851,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1584,6 +1864,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1595,6 +1877,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1606,6 +1890,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1617,6 +1903,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1628,6 +1916,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1639,6 +1929,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1650,6 +1942,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1661,6 +1955,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1672,6 +1968,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1683,6 +1981,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1694,6 +1994,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1705,6 +2007,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1716,6 +2020,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1727,6 +2033,8 @@
     "ladies":true,
     "youth":false,
     "kids":false,
+    "hats":true,
+    "accessories":false,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1738,6 +2046,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1749,6 +2059,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1760,6 +2072,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1771,6 +2085,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1782,6 +2098,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1793,6 +2111,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1804,6 +2124,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1815,6 +2137,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1826,6 +2150,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1837,6 +2163,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1848,6 +2176,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1859,6 +2189,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1870,6 +2202,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1881,6 +2215,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1892,6 +2228,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1903,6 +2241,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1914,6 +2254,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1925,6 +2267,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1936,6 +2280,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1947,6 +2293,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1958,6 +2306,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1969,6 +2319,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1980,6 +2332,8 @@
     "ladies":false,
     "youth":false,
     "kids":true,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -1991,6 +2345,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -2002,6 +2358,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -2013,6 +2371,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -2024,6 +2384,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -2035,6 +2397,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -2046,6 +2410,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 },
@@ -2057,6 +2423,8 @@
     "ladies":false,
     "youth":false,
     "kids":false,
+    "hats":false,
+    "accessories":true,
     "sizes":["S","M","L"],
     "prices":[[100,200,300]]
 }
