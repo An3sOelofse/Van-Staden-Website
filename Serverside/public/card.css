@@ -220,9 +220,8 @@
     }
 
     .mainimg {
-        width: 150px;
+        max-width: 150px;
         max-height: 175px;
-        object-fit: cover;
         
     }
 
