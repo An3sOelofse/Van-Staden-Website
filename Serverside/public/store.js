@@ -188,10 +188,14 @@ function linkClicked(ref){
         });
     }
     else if(ref === 'hats'){
-        
+        filteredCards = cards.filter(c => {
+            return (productArray[c.index].hats);
+        });
     }
     else if(ref === 'acc'){
-        
+        filteredCards = cards.filter(c => {
+            return (productArray[c.index].accessories);
+        });
     }
     else if(ref === 'all'){
         filteredCards = cards.filter(c => {
