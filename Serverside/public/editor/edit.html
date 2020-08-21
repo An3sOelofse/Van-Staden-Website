@@ -15,9 +15,18 @@
 
 
     <section class="header">
-        <button>Add New Item</button>
-        <button>Remove Items</button>
-        <button>Edit Items</button>
+        <div class="password-container">
+            <label for="search">
+                Password
+                <input type="password" id="passwordField">
+            </label>
+            <button onclick="testPasswordButton()" class="testPasswordButton" id="testPasswordButton">Test Password</button>
+        </div>
+        <div class="button-container">
+            <button>Add New Item</button>
+            <button>Remove Items</button>
+            <button>Edit Items</button>
+        </div>
     </section>
 
 
@@ -82,17 +91,20 @@
     </section>
 
 
-    <section class="remove-items">
+    <section class="edit-items invalid" id="editItems">
         <label for="search">
             Search Product Name
             <input type="text" id="search">
         </label>
+
         <div id="cardcontainer"></div>
     </section>
 
 
-    <section class="edit-items"></section>
+    <section class="remove-items"></section>
 
+    <script src="./edit.js"></script>
+    <script src="./card.js"></script>
     
 </body>
 </html>

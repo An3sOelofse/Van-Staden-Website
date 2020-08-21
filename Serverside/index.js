@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(express.static("public"));
 app.get("/get-product-data",sendProductList);
 app.post("/send-cart-information",receiveCartInformation,formatEmailString,sendEmail);
+app.post('/test-edit-password',checkPassword);
 app.listen(port, () => console.log("server is running..."));
 
 
@@ -80,5 +81,15 @@ function sendEmail(req,res,next){
         }
     });
 
+    next();
+}
+
+function checkPassword(req,res,next){
+    if(req.body.password === process.env.EDIT_PASSWORD){
+        res.json({valid:true});
+    }
+    else{
+        res.json({valid:false});
+    }
     next();
 }
