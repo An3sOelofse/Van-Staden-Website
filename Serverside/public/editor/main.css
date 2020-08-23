@@ -13,6 +13,9 @@
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
 }
+body {
+    background-color: rgb(79, 84, 104);
+}
 
 
 
@@ -20,7 +23,7 @@
 
 
 .header {
-    background-color: #2e2e2e;
+    background-color: #222641ff;
     width: 100%;
     height: 8vh;
     display: flex;
@@ -30,6 +33,7 @@
 .password-container {
     width: 600px;
     height: 8vh;
+    font-weight: bold;
     justify-self: flex-start;
     display: flex;
     align-items: center;
@@ -39,15 +43,25 @@
 
 #passwordField {
     width: 300px;
+    height: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+}
+#passwordField:focus{
+    outline: none;
 }
 .testPasswordButton {
-    background-color: #5a5a5a;
+    background-color: rgb(53, 59, 99);
     color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9rem;
     border: none;
     width: 200px;
-    padding: 10px;
+    height: 30px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .testPasswordButton:focus {
     outline: none;
@@ -60,7 +74,7 @@
 }
 
 #linkContainer {
-    background-color: #3b3b3b;
+    background-color: rgb(41, 47, 80);
     height: 30px;
     display: flex;
     justify-content: flex-start;
@@ -68,4 +82,59 @@
 }
 #link {
     color: #ffffff;
+    text-decoration: none;
+    margin-left: 140px;
 }
+#upload-csv{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(108, 113, 136);
+    color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#upload-csv img {
+    height: 250px;
+}
+.csv-submit {
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: #4b1d1d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 200px;
+}
+.csv-submit:focus {
+    outline: none;
+}
+.csv-submit:active {
+    background-color: #741919;
+}
+.csv-file {
+    margin-left: 100px;
+    width: 400px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #222641ff;
+}
+.csv-file::-webkit-file-upload-button {
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #222641ff;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+  }
+  .csv-file::-webkit-file-upload-button:focus {
+    outline: none;
+  }
+  .csv-file::-webkit-file-upload-button:active {
+    background-color: rgb(49, 55, 92);
+  }

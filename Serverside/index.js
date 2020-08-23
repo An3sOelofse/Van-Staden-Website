@@ -19,10 +19,7 @@ app.get("/get-product-data",sendProductList);
 app.get("/editor/product-list-data.csv",(req,res) => {res.sendFile('product-list-data.csv',{root:'./'});} );
 app.post("/send-cart-information",receiveCartInformation,formatEmailString,sendEmail);
 app.post('/test-edit-password',checkPassword);
-app.post('/editor/csv-upload',getCsvFile);
-app.listen(port, () => console.log("server is running..."));
-
-function getCsvFile(req,res,next){
+app.post('/editor/csv-upload',(req,res) => {
     let form = new formidable.IncomingForm();
     form.parse(req,(err, fields, files) => {
         let oldpath = files.filetoupload.path;
@@ -32,9 +29,9 @@ function getCsvFile(req,res,next){
             res.write('File uploaded and moved!');
             res.end();
         });
-    });
-    next();
-}
+    });    
+});
+app.listen(port, () => console.log("server is running..."));
 
 async function sendProductList(req,res,next){
     let products = await processLineByLine();
