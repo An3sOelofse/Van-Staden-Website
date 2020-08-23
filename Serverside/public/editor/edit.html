@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Product Data</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="card.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <section class="warning">
-        <h1>WARNING: CHANGES CANNOT BE UNDONE</h1>
-    </section>
 
 
     <section class="header">
@@ -94,11 +92,10 @@
     <section class="edit-items invalid" id="editItems">
         <label for="search">
             Search Product Name
-            <input type="text" id="search">
+            <input type="text" id="search" oninput="searchCards()">
         </label>
-
-        <div id="cardcontainer"></div>
     </section>
+    <section id="editcardcontainer"></section>
 
 
     <section class="remove-items"></section>

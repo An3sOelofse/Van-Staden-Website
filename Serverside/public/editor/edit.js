@@ -1,7 +1,26 @@
 let passwordField = document.getElementById('passwordField');
+let searchField = document.getElementById('search');
+let editCardContainer = document.getElementById('editcardcontainer');
+
 let productData = [];
+let cards = [];
+let filteredCards = [];
+
 
 getProductData().then(createCards);
+
+function searchCards(){
+    filteredCards = [];
+    editCardContainer.innerHTML = '';
+    for(let i = 0;i <productData.length;i++){
+        if(productData[i].name.toLowerCase().replace(/\s/g, '').includes(searchField.value.toLowerCase().replace(/\s/g, ''))){
+            filteredCards[filteredCards.length] = cards[i];
+        }
+    }
+    filteredCards.forEach(card => {
+        card.appendToContainer(editCardContainer);
+    });
+}
 
 function createCards(){
     for(let i = 0; i < productData.length; i++){

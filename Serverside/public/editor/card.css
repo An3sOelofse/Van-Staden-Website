@@ -10,10 +10,11 @@
     --transition-time: 200ms;
 }
 
-#cardcontainer {
+#editcardcontainer {
+    width: 100%;
     display: grid;
     gap:20px;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit,200px);
     padding-top: 40px;
     
@@ -22,13 +23,13 @@
 
 .card {
     justify-self: center;
-    width: 400px;
+    width: 100%;
     height: 200px;
     border-radius: 15px;
     background-color: var(--card-color-normal);
     color: var(--card-font-color);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     transition: ease-in-out var(--transition-time);
     z-index: 510;
@@ -41,7 +42,7 @@
 }
 
 .textcontainer {
-    width: 180px;
+    width: 500px;
     height: 180px;
     padding: 10px 10px 10px 0px;
     position: relative;
@@ -112,25 +113,8 @@
     border-color: var(--card-color-hover);
 }
 
-
-
-
-
-
-.card h1 {
-    font-size: 20px;
-    margin-top: 5px;
-    
-}
-
-.card h2 {
-    font-size: 15px;
-    margin-top: 20px;
-}
-
-.card h3 {
-    font-size: 10px;
-    margin-top: 10px;
+.input-element {
+    width: 100%;
 }
 
 
