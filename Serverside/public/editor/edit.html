@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Product Data</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="card.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,88 +19,18 @@
             </label>
             <button onclick="testPasswordButton()" class="testPasswordButton" id="testPasswordButton">Test Password</button>
         </div>
-        <div class="button-container">
-            <button>Add New Item</button>
-            <button>Remove Items</button>
-            <button>Edit Items</button>
-        </div>
     </section>
 
+    <section id="linkContainer"></section>
 
-    <section class="add-new-item">
-
-        <div class="inputs">
-            <label for="name">
-                Product Name
-                <input type="text" id="name">
-            </label>
-            <label for="name">
-                Product Colours
-                <input type="text" id="colours">
-            </label>
-            <label for="name">
-                Product Codes
-                <input type="text" id="codes">
-            </label>
-            <label for="name">
-                Product Sizes
-                <input type="text" id="sizes">
-            </label>
-            <label for="name">
-                Product Prices
-                <input type="text" id="prices">
-            </label>
-        </div>
-
-        <div class="checkboxes">
-            <label for="ladies">
-                <input type="checkbox">
-                Ladies
-            </label>
-            <label for="youth">
-                <input type="checkbox">
-                Youth
-            </label>
-            <label for="kids">
-                <input type="checkbox">
-                Kids
-            </label>
-            <label for="hats">
-                <input type="checkbox">
-                Hats
-            </label>
-            <label for="accesories">
-                <input type="checkbox">
-                Accesories
-            </label>
-
-        </div>
-
-        <div class="cardcontainer"></div>
-
-        <div class="images-selection">
-            <select name="ImgColourSelect" id="img-colour-select"></select>
-            <img src="" alt="Large Image" id="main-img">
-            <img src="" alt="Colour Image" id="colour-img">
-            <button id="imgSubmit">Submit</button>
-        </div>
-
+    <section id="upload-csv">
+        <form action="csv-upload" method="post" enctype="multipart/form-data">');
+            <input type="file" name="filetoupload" class="csv-file"><br>
+            <input type="submit" class="csv submit">
+        </form>
     </section>
-
-
-    <section class="edit-items invalid" id="editItems">
-        <label for="search">
-            Search Product Name
-            <input type="text" id="search" oninput="searchCards()">
-        </label>
-    </section>
-    <section id="editcardcontainer"></section>
-
-
-    <section class="remove-items"></section>
 
     <script src="./edit.js"></script>
-    <script src="./card.js"></script>
     
 </body>
 </html>

@@ -1,38 +1,5 @@
 let passwordField = document.getElementById('passwordField');
-let searchField = document.getElementById('search');
-let editCardContainer = document.getElementById('editcardcontainer');
 
-let productData = [];
-let cards = [];
-let filteredCards = [];
-
-
-getProductData().then(createCards);
-
-function searchCards(){
-    filteredCards = [];
-    editCardContainer.innerHTML = '';
-    for(let i = 0;i <productData.length;i++){
-        if(productData[i].name.toLowerCase().replace(/\s/g, '').includes(searchField.value.toLowerCase().replace(/\s/g, ''))){
-            filteredCards[filteredCards.length] = cards[i];
-        }
-    }
-    filteredCards.forEach(card => {
-        card.appendToContainer(editCardContainer);
-    });
-}
-
-function createCards(){
-    for(let i = 0; i < productData.length; i++){
-        cards[i]= new Card(productData[i],i);
-        cards[i].create();
-    }
-}
-
-async function getProductData(){
-    const rawData = await fetch('/get-product-data');
-    productData = await rawData.json();
-}
 
 async function testPasswordButton(){
     let btn = document.getElementById('testPasswordButton');
@@ -40,7 +7,15 @@ async function testPasswordButton(){
     if(valid){
         btn.classList.add('valid');
         btn.classList.remove('invalid');
-        document.getElementById('editItems').classList.remove('invalid');
+        if(!document.getElementById('link')){
+            let link = document.createElement('a');
+            link.id = 'link';
+            link.innerText = 'download csv';
+            link.href = './product-list-data.csv';
+            console.log(link);
+            document.getElementById('linkContainer').appendChild(link);
+        }
+       
     }
     else{
         btn.classList.add('invalid');
@@ -62,3 +37,4 @@ async function checkPassword(){
     const answer = await feedback.json();
     return answer.valid;
 }
+

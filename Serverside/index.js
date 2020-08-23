@@ -3,6 +3,7 @@ const fs = require('fs');
 const nodemailer = require('nodemailer');
 const express = require('express');
 const readline = require('readline');
+const formidable = require('formidable');
 const { request } = require('express');
 const app = express();
 
@@ -15,10 +16,25 @@ const port = process.env.PORT||3000;
 app.use(express.json());
 app.use(express.static("public"));
 app.get("/get-product-data",sendProductList);
+app.get("/editor/product-list-data.csv",(req,res) => {res.sendFile('product-list-data.csv',{root:'./'});} );
 app.post("/send-cart-information",receiveCartInformation,formatEmailString,sendEmail);
 app.post('/test-edit-password',checkPassword);
+app.post('/editor/csv-upload',getCsvFile);
 app.listen(port, () => console.log("server is running..."));
 
+function getCsvFile(req,res,next){
+    let form = new formidable.IncomingForm();
+    form.parse(req,(err, fields, files) => {
+        let oldpath = files.filetoupload.path;
+        let newpath = './product-list-data.csv';
+        fs.rename(oldpath, newpath, (err) => {
+            if (err) throw err;
+            res.write('File uploaded and moved!');
+            res.end();
+        });
+    });
+    next();
+}
 
 async function sendProductList(req,res,next){
     let products = await processLineByLine();
@@ -90,9 +106,11 @@ function sendEmail(req,res,next){
 function checkPassword(req,res,next){
     if(req.body.password === process.env.EDIT_PASSWORD){
         res.json({valid:true});
+        res.valid = true;
     }
     else{
         res.json({valid:false});
+        res.valid = false;
     }
     next();
 }
@@ -152,7 +170,6 @@ async function processLineByLine() {
 
   let objectline = 0;
   let data = [];
-  console.log(data);
   let product = {
         name:'',
         colours:[],

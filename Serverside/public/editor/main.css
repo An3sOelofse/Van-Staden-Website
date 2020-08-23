@@ -17,24 +17,6 @@
 
 
 
-.warning{
-    background-color: #411212;
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.warning h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    color: #9c3131;
-}
-
-
-
-
-
 
 
 .header {
@@ -42,16 +24,30 @@
     width: 100%;
     height: 8vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 .password-container {
-    width: 400px;
+    width: 600px;
     height: 8vh;
     justify-self: flex-start;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
+}
+
+#passwordField {
+    width: 300px;
+}
+.testPasswordButton {
+    background-color: #5a5a5a;
+    color: #ffffff;
+    border: none;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
 }
 .testPasswordButton:focus {
     outline: none;
@@ -63,110 +59,13 @@
     background-color: #721e1e;
 }
 
-
-.button-container {
+#linkContainer {
+    background-color: #3b3b3b;
+    height: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
-.header button {
-    background-color: #5a5a5a;
+#link {
     color: #ffffff;
-    border: none;
-    width: 200px;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-.add-new-item {
-    background-color: #a7a7a7;
-    height: 84vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 400px;
-    grid-template-rows: 200px 1fr;
-    grid-template-areas:
-    "inputs checkboxes card"
-    "inputs none none";
-
-    display: none;
-}
-
-.inputs {
-    grid-area: inputs;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.inputs label {
-    width: 90%;
-}
-.inputs label input {
-    width: 90%;
-}
-.checkboxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-}
-.images-selection {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 50px 1fr 50px;
-    grid-template-areas: 
-    "select select"
-    "main colour"
-    "button button";
-    padding: 10px;
-}
-.images-selection select {
-    grid-area: select;
-}
-.images-selection button {
-    grid-area: button;
-}
-.cardcontainer {
-    grid-area: card;
-    background-color: blueviolet;
-}
-
-
-
-
-
-
-
-
-
-.edit-items.invalid{
-    display: none;
-}
-
-.edit-items {
-    background-color: #636363;
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 70px auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.edit-items label {
-    width: 90%;
-    margin-left: 30px;
-}
-.edit-items label input {
-    width: 90%;
-    height: 20px;
-    border: none;
-    border-radius: 5px;
 }
