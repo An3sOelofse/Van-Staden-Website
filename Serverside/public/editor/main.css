@@ -85,6 +85,9 @@ body {
     text-decoration: none;
     margin-left: 140px;
 }
+#upload-csv.hidden {
+    display: none;
+}
 #upload-csv{
     height: 350px;
     width: 100%;

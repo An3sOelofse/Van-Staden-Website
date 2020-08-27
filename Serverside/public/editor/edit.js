@@ -15,6 +15,7 @@ async function testPasswordButton(){
             console.log(link);
             document.getElementById('linkContainer').appendChild(link);
         }
+        document.getElementById('upload-csv').classList.remove('hidden');
        
     }
     else{
