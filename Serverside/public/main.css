@@ -134,8 +134,6 @@ nav::after{
     display: flex;
     width: 60px;
     height: 120px;
-
-
 }
 .socialcontainer img{
     width: 50px;
@@ -408,6 +406,15 @@ nav::after{
 
 @media all and (max-width: 500px){
 
+    .socialcontainer {
+        position: absolute;
+        top: 70vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 460;
+        display: flex;
+        width: 115px;
+    }
    
 
     .contact img {
@@ -444,7 +451,7 @@ nav::after{
 
     #downarrow{
         width: 15%;
-        bottom: 10%;
+        bottom: 5%;
     }
 
 }
