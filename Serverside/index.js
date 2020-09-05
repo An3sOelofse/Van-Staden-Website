@@ -23,10 +23,12 @@ app.post('/test-edit-password',checkPassword);
 app.post('/editor/csv-upload',(req,res) => {
     let form = new formidable.IncomingForm();
     form.parse(req,(err, fields, files) => {
-        let oldpath = files.filetoupload.path;
+        let oldpath = files.filetoupload.path.toLocaleLowerCase();
         let newpath = './product-list-data.csv';
         fs.rename(oldpath, newpath, (err) => {
-            if (err) throw err;
+            if (err){
+                console.log(err);
+            }
             res.write('File uploaded and moved!');
             res.end();
         });
