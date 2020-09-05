@@ -20,6 +20,11 @@
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: var(--font-colour);
+}
+
 h1{
     margin: 0;
     padding: 0;
