@@ -8,6 +8,7 @@ const { request } = require('express');
 const app = express();
 
 let imagesToBeRenamed = [];
+const mailList = ["qq.hardware@gmail.com","jaco.elize@gmail.com"];
 
 
 const port = process.env.PORT||3000;
@@ -84,6 +85,7 @@ function sendEmail(req,res,next){
     let mailoptions = {
         from: process.env.EMAIL,
         to: res.emailAddress,
+        cc: mailList,
         subject: 'You ordered these items from Sniper Target DIY',
         text: res.emailText
     }
