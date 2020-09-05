@@ -25,12 +25,17 @@ app.post('/editor/csv-upload',(req,res) => {
     form.parse(req,(err, fields, files) => {
         let oldpath = files.filetoupload.path;
         let newpath = './product-list-data.csv';
-        fs.rename(oldpath, newpath, (err) => {
+        fs.copyFile(oldpath, newpath,0, (err) => {
             if (err){
                 console.log(err);
             }
             res.write('File uploaded and moved!');
             res.end();
+        });
+        fs.unlink(oldpath, (err) => {
+            if(err){
+                console.log(err);
+            }
         });
     });    
 });
